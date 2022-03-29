@@ -1,12 +1,12 @@
-package com.titanio.app.ui.activities
+package com.titanio.app.ui.activities.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.titanio.app.R
 
-class SplashActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_home)
     }
 }

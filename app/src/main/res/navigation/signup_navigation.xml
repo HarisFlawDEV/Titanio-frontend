@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_signup">
+
+    <fragment
+        android:id="@+id/navigation_signup"
+        android:name="com.titanio.app.ui.activities.signup.fragments.SignupFragment"
+        android:label="@string/title_signup"
+        tools:layout="@layout/fragment_signup">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_app_setup"
+        android:name="com.titanio.app.ui.activities.signup.fragments.AppSetupActivity"
+        android:label="@string/title_app_setup"
+        tools:layout="@layout/fragment_app_setup">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_scan_qr_code"
+        android:name="com.titanio.app.ui.activities.signup.fragments.ScanQRCodeFragment"
+        android:label="@string/title_scan_qr_code"
+        tools:layout="@layout/fragment_scan_q_r_code">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_suit_case_detail"
+        android:name="com.titanio.app.ui.activities.signup.fragments.SuitCaseDetailFragment"
+        android:label="@string/title_suit_case_detail"
+        tools:layout="@layout/fragment_suit_case_details">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_suit_case_added"
+        android:name="com.titanio.app.ui.activities.signup.fragments.SuitCaseAddedFragment"
+        android:label="@string/navigation_suit_case_added"
+        tools:layout="@layout/fragment_suit_case_added">
+
+    </fragment>
+</navigation>

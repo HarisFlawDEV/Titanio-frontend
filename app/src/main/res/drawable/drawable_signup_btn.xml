@@ -4,7 +4,6 @@
     <corners
         android:radius="35dp"/>
 
-    <!--  Gradient Bg for listrow -->
     <gradient
 
         android:startColor="#303030"
