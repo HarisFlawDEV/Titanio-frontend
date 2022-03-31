@@ -9,11 +9,17 @@
     <string name="title_scan_qr_code">Scan QR Code</string>
     <string name="title_suit_case_detail">Suit Case Detail</string>
     <string name="navigation_suit_case_added">Suit Case Added</string>
-    <string name="navigation_intorduction">Intorduction screen</string>
     <string name="validate_your_suitcase_warranty_luggage_recovery_system">Validate your Suitcase Warranty &amp; Luggage Recovery System</string>
     <string name="your_suit_case_has_been_registered">Your suit case has been registered with global warranty and suitcase’ lost &amp; found system is activated.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_intorduction">Intorduction screen</string>
     <string name="luggae_desc">Our Infinity Subscription Covers Your\nSuitcase With An Unlimited\nReplacement Warranty*. You Break It\nWe Replace Or Fix It.</string>
+    <string name="navigation_subscription_plan">Subscription Plan</string>
 
     <string name="title_home">Home</string>
+    <string name="navigation_apple_tracking">Apple Tracking</string>
+    <string name="navigation_create_group">Create Group</string>
+    <string name="navigation_friends_in_group">Friends in Groups</string>
+    <string name="navigation_profile_completed">Profile Completed</string>
 
 </resources>

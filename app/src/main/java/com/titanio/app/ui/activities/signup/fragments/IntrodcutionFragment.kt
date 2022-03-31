@@ -12,6 +12,7 @@ import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.titanio.app.R
@@ -43,6 +44,7 @@ class IntrodcutionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        mNavController = Navigation.findNavController(view)
 
         initUI()
     }
@@ -62,6 +64,12 @@ class IntrodcutionFragment : Fragment() {
 
 
         addDots()
+        mBinding.tvStartIntro.setOnClickListener(View.OnClickListener {
+
+            mNavController.navigate(R.id.navigation_subscription_plan)
+        })
+
+
     }
 
     fun addDots() {

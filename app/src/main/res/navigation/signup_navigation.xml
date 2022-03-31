@@ -52,4 +52,46 @@
         tools:layout="@layout/fragment_app_introduction">
 
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_subscription_plan"
+        android:name="com.titanio.app.ui.activities.signup.fragments.SubscriptionPlanFragment"
+        android:label="@string/navigation_subscription_plan"
+        tools:layout="@layout/fragment_subscription_plan">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Apple_Tracker"
+        android:name="com.titanio.app.ui.activities.signup.fragments.AppleTrackingFragment"
+        android:label="@string/navigation_apple_tracking"
+        tools:layout="@layout/fragment_apple_tracking">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Create_Group"
+        android:name="com.titanio.app.ui.activities.signup.fragments.CreateGroupFragment"
+        android:label="@string/navigation_create_group"
+        tools:layout="@layout/fragment_create_group">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_Friends_In_Group"
+        android:name="com.titanio.app.ui.activities.signup.fragments.FriendsInGroupFragment"
+        android:label="@string/navigation_friends_in_group"
+        tools:layout="@layout/fragment_friends_in_group">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Profile_Completed"
+        android:name="com.titanio.app.ui.activities.signup.fragments.ProfileCompletedFragment"
+        android:label="@string/navigation_profile_completed"
+        tools:layout="@layout/fragment_profile_completed">
+    </fragment>
+
+
 </navigation>
