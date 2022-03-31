@@ -268,10 +268,10 @@
                     android:layout_marginTop="@dimen/_7sdp">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:adjustViewBounds="true"
-                        android:src="@drawable/ic_photo_selected" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/ic_photo_selected" />
 
                     <ImageView
                         android:layout_width="70dp"

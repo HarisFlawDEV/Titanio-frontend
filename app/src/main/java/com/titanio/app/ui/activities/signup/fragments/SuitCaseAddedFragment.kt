@@ -38,6 +38,9 @@ class SuitCaseAddedFragment : Fragment() {
         mBinding.btnAddAnotherLuggage.setOnClickListener(View.OnClickListener {
             navController.navigate(R.id.navigation_scan_qr_code)
         })
+        mBinding.btnProfileSetup.setOnClickListener(View.OnClickListener {
+            navController.navigate(R.id.navigation_intorodcution)
+        })
 
     }
 }

@@ -44,4 +44,12 @@
         tools:layout="@layout/fragment_suit_case_added">
 
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_intorodcution"
+        android:name="com.titanio.app.ui.activities.signup.fragments.IntrodcutionFragment"
+        android:label="@string/navigation_intorduction"
+        tools:layout="@layout/fragment_app_introduction">
+
+    </fragment>
 </navigation>
