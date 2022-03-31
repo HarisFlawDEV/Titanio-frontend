@@ -18,6 +18,9 @@
             android:layout_height="?actionBarSize" />
 
     </LinearLayout>
-    <include layout="@layout/content_main" />
+
+    <include
+        android:id="@+id/include_home"
+        layout="@layout/content_main" />
 
 </RelativeLayout>

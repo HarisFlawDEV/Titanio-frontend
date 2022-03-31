@@ -17,6 +17,8 @@
     <string name="navigation_subscription_plan">Subscription Plan</string>
 
     <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_search">Search</string>
     <string name="navigation_apple_tracking">Apple Tracking</string>
     <string name="navigation_create_group">Create Group</string>
     <string name="navigation_friends_in_group">Friends in Groups</string>

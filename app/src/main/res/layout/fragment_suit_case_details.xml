@@ -274,17 +274,15 @@
                         android:background="@drawable/ic_photo_selected" />
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:adjustViewBounds="true"
                         android:src="@drawable/ic_photo_icon_with_shapes" />
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:adjustViewBounds="true"
                         android:src="@drawable/ic_photo_icon_with_shapes" />
                 </LinearLayout>
 
@@ -301,10 +299,9 @@
 
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_7sdp"
-                    android:adjustViewBounds="true"
                     android:src="@drawable/ic_invoice_icon_with_shapes" />
 
                 <androidx.appcompat.widget.AppCompatButton

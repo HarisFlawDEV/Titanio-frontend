@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     >
 
     <RelativeLayout
@@ -28,7 +27,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Home"
+            android:text="Chat"
             android:textColor="@color/white"
             android:textSize="@dimen/_14sdp" />
 
@@ -49,23 +48,13 @@
         android:layout_marginTop="70dp"
         android:background="@drawable/drawbale_cardview_corner">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_home"
+                android:id="@+id/rv_chat"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/_15sdp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="50dp"
-                android:src="@drawable/ic_filter" />
-        </FrameLayout>
+
     </LinearLayout>
 </RelativeLayout>

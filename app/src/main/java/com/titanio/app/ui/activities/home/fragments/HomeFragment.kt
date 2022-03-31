@@ -7,13 +7,59 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.titanio.app.R
 import com.titanio.app.databinding.FragmentHomeBinding
+import com.titanio.app.model.HomeModel
+import com.titanio.app.ui.activities.home.adapters.HomeAdapter
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), HomeAdapter.IPostClick {
 
 
     private lateinit var mBinding: FragmentHomeBinding
     private lateinit var navController: NavController
+
+
+    var postList = arrayOf<HomeModel>(
+        HomeModel(
+            R.drawable.bg_userone,
+            "Spending Holidays With Family",
+            R.drawable.ic_user_one,
+            "Dale Houston",
+            "10 min ago",
+            false,
+            false
+        ),
+        HomeModel(
+            R.drawable.bg_usertwo,
+            "I Did Skydiving For The First Time",
+            R.drawable.ic_user_two,
+            "Ellis John",
+            "1 day ago",
+            true,
+            false
+        ),
+        HomeModel(
+            R.drawable.bg_userthree,
+            "I Did Skydiving For The First Time",
+            R.drawable.ic_user_three,
+            "Ellis John",
+            "1 day ago",
+            false,
+            false
+        ),
+        HomeModel(
+            R.drawable.bg_userfour,
+            "I Did Skydiving For The First Time",
+            R.drawable.ic_user_two,
+            "Ellis John",
+            "1 day ago",
+            false,
+            false
+        ),
+    )
+
+    lateinit var homeAdapter: HomeAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,5 +78,24 @@ class HomeFragment : Fragment() {
 
     }
 
-    fun initUI() {}
+    fun initUI() {
+
+        mBinding.rvHome?.setLayoutManager(
+            LinearLayoutManager(
+                activity,
+                LinearLayoutManager.VERTICAL,
+                false
+            )
+        )
+
+        homeAdapter = HomeAdapter(
+            postList, requireActivity(), this
+        )
+        mBinding.rvHome?.adapter = homeAdapter
+    }
+
+    override fun likeClick(index: Int) {
+        postList.get(index).isLike = true
+        mBinding.rvHome.adapter?.notifyDataSetChanged()
+    }
 }
