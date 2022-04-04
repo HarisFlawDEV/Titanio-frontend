@@ -23,5 +23,8 @@
     <string name="navigation_create_group">Create Group</string>
     <string name="navigation_friends_in_group">Friends in Groups</string>
     <string name="navigation_profile_completed">Profile Completed</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_other_user_profile">Other User Profile</string>
 
 </resources>

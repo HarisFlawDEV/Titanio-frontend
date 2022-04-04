@@ -30,7 +30,7 @@
                 android:layout_height="100dp">
 
                 <ImageView
-                    android:id="@+id/imgBack"
+                    android:id="@+id/img_back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="17dp"
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="23dp"
-                    android:layout_toEndOf="@+id/imgBack"
+                    android:layout_toEndOf="@+id/img_back"
                     android:padding="5dp"
                     android:src="@drawable/ic_search" />
 

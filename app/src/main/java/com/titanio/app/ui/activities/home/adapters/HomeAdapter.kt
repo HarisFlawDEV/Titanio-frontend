@@ -1,16 +1,25 @@
 package com.titanio.app.ui.activities.home.adapters
 
 import android.content.Context
+import android.graphics.drawable.Drawable
+import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.annotation.NonNull
+import androidx.annotation.Nullable
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.target.CustomTarget
+import com.bumptech.glide.request.transition.Transition
 import com.titanio.app.R
 import com.titanio.app.model.HomeModel
+
 
 class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostClick: IPostClick) :
     RecyclerView.Adapter<HomeAdapter.CategoryVH>() {
@@ -44,11 +53,27 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
         holder.tv_time_ago.setText(item.timeAgo)
 
 
-        holder.img_background_pic?.let {
-            Glide.with(ctx)
-                .load(item.image)
-                .into(it)
-        }
+
+
+        Glide.with(ctx)
+            .load(item.image)
+            .into(object : CustomTarget<Drawable?>() {
+//                @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+//                fun onResourceReady(
+//                    @NonNull resource: Drawable?,
+//                    @Nullable transition: Transition<in Drawable?>?
+//                ) {
+//                    img_background_pic.setBackground(resource)
+//                }
+
+                override fun onLoadCleared(@Nullable placeholder: Drawable?) {}
+                override fun onResourceReady(
+                    resource: Drawable,
+                    transition: Transition<in Drawable?>?
+                ) {
+                    holder.img_background_pic.setBackground(resource)
+                }
+            })
 
 
         holder.img_user_pic?.let {
@@ -63,6 +88,17 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
                 if (holder.adapterPosition >= 0) {
 
                     iPostClick.likeClick(holder.adapterPosition)
+
+
+                }
+            }
+        })
+        holder.ll_profile.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+                if (holder.adapterPosition >= 0) {
+
+                    iPostClick.profileClick()
 
 
                 }
@@ -83,9 +119,9 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
         var img_user_pic: ImageView
         var tv_username: TextView
         var tv_time_ago: TextView
-        var img_background_pic: ImageView
+        var img_background_pic: RelativeLayout
         var img_video: ImageView
-
+        var ll_profile: LinearLayout
 
         init {
 
@@ -96,6 +132,7 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
             tv_time_ago = itemView.findViewById(R.id.tv_time_ago)
             img_background_pic = itemView.findViewById(R.id.img_background_pic)
             img_video = itemView.findViewById(R.id.img_video)
+            ll_profile = itemView.findViewById(R.id.ll_profile)
 
             img_like = itemView.findViewById(R.id.img_like)
 
@@ -105,5 +142,6 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
 
     interface IPostClick {
         fun likeClick(index: Int)
+        fun profileClick()
     }
 }

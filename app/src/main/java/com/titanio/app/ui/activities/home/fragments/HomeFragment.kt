@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentHomeBinding
 import com.titanio.app.model.HomeModel
+import com.titanio.app.ui.activities.home.HomeActivity
 import com.titanio.app.ui.activities.home.adapters.HomeAdapter
 
 class HomeFragment : Fragment(), HomeAdapter.IPostClick {
@@ -94,8 +95,19 @@ class HomeFragment : Fragment(), HomeAdapter.IPostClick {
         mBinding.rvHome?.adapter = homeAdapter
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        (activity as HomeActivity?)?.showBottmBar()
+
+    }
+
     override fun likeClick(index: Int) {
         postList.get(index).isLike = true
         mBinding.rvHome.adapter?.notifyDataSetChanged()
+    }
+
+    override fun profileClick() {
+        navController.navigate(R.id.navigation_other_user_profile)
     }
 }

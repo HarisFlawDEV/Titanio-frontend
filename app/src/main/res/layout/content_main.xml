@@ -14,15 +14,15 @@
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="52dp"
             app:defaultNavHost="true"
-
             app:navGraph="@navigation/home_navigation"
 
             />
 
 
         <RelativeLayout
-            android:id="@+id/rrBottomBar"
+            android:id="@+id/rr_bottom_bar"
             android:layout_width="match_parent"
             android:layout_height="88dp"
             android:layout_gravity="bottom"
@@ -133,6 +133,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ll_profile"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2"

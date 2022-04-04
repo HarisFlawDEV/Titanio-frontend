@@ -1,6 +1,5 @@
 package com.titanio.app.ui.activities.home.fragments
 
-import android.app.Activity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,43 +7,39 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.titanio.app.databinding.FragmentSearchBinding
+import com.titanio.app.databinding.FragmentEditProfileBinding
 import com.titanio.app.ui.activities.home.HomeActivity
 
-class SearchFragment : Fragment() {
-
-    private lateinit var mBinding: FragmentSearchBinding
-    private lateinit var navController: NavController
-
+class EditProfileFragment : Fragment() {
+    var navController: NavController? = null
+    private lateinit var mBinding: FragmentEditProfileBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentSearchBinding.inflate(inflater, container, false)
+        mBinding = FragmentEditProfileBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         navController = Navigation.findNavController(view)
 
         initUI()
 
+
     }
+
 
     fun initUI() {
         (activity as HomeActivity?)?.hidebottomBar()
 
-
-        mBinding.imgBack.setOnClickListener(View.OnClickListener {
-
-            navController.navigateUp()
-            (activity as HomeActivity?)?.showBottmBar()
-            (activity as HomeActivity?)?.unSelecteAll()
-
-
+        mBinding.btnSave.setOnClickListener(View.OnClickListener {
+            navController?.navigateUp()
         })
     }
+
 }
