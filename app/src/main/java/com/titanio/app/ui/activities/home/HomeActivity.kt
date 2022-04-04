@@ -92,6 +92,7 @@ class HomeActivity : AppCompatActivity() {
     fun hidebottomBar() {
         mBinding.includeHome.rrBottomBar.visibility = View.GONE
 
+
     }
 
     fun showBottmBar() {

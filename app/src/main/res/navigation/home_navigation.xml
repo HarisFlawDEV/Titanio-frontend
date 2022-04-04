@@ -90,4 +90,11 @@
         tools:layout="@layout/fragment_notification">
 
     </fragment>
+    <fragment
+        android:id="@+id/navigation_post_detail_pic"
+        android:name="com.titanio.app.ui.activities.home.fragments.PostDetailPicFragment"
+        android:label="@string/post_detail_pic"
+        tools:layout="@layout/fragment_post_detail_pic">
+
+    </fragment>
 </navigation>

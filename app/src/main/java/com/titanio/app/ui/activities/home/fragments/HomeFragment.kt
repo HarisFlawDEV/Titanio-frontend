@@ -114,4 +114,15 @@ class HomeFragment : Fragment(), HomeAdapter.IPostClick {
     override fun profileClick() {
         navController.navigate(R.id.navigation_other_user_profile)
     }
+
+    override fun parentClick(index: Int) {
+        val bundle = Bundle()
+        if (index == 1) {
+            bundle.putBoolean("is_video", true)
+        }
+        else{
+            bundle.putBoolean("is_video", false)
+        }
+        navController.navigate(R.id.navigation_post_detail_pic,bundle)
+    }
 }

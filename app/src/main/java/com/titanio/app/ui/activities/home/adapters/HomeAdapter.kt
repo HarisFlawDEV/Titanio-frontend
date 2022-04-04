@@ -104,8 +104,19 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
                 }
             }
         })
+        holder.rl_parent.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
 
+                if (holder.adapterPosition >= 0) {
+
+                    iPostClick.parentClick(holder.adapterPosition)
+
+
+                }
+            }
+        })
     }
+
 
     override fun getItemCount(): Int {
         return postItems.size
@@ -122,6 +133,8 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
         var img_background_pic: RelativeLayout
         var img_video: ImageView
         var ll_profile: LinearLayout
+        var rl_parent: RelativeLayout
+
 
         init {
 
@@ -135,6 +148,7 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
             ll_profile = itemView.findViewById(R.id.ll_profile)
 
             img_like = itemView.findViewById(R.id.img_like)
+            rl_parent = itemView.findViewById(R.id.rl_parent)
 
         }
 
@@ -142,6 +156,8 @@ class HomeAdapter(var postItems: Array<HomeModel>, var ctx: Context, var iPostCl
 
     interface IPostClick {
         fun likeClick(index: Int)
+        fun parentClick(index:Int)
         fun profileClick()
     }
+
 }

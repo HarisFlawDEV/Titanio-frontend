@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Titanio">
         <activity
+            android:screenOrientation="landscape"
+            android:name=".ui.activities.postdetailvideo.PostDetailVideoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.home.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

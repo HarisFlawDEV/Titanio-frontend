@@ -23,10 +23,21 @@
     <string name="navigation_create_group">Create Group</string>
     <string name="navigation_friends_in_group">Friends in Groups</string>
     <string name="navigation_profile_completed">Profile Completed</string>
+    <string name="post_detail_pic">Post Detail Pic</string>
+    <string name="comment_one">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</string>
+    <string name="comment_two">Neque 😊 porro quisquam est qui dolorem quia dolor sit amet.</string>
+    <string name="comment_three">Neque porro quisquam est 👍</string>
+    <string name="comment_four">Quisquam estqui dolorem quia sit amet, consectetur 🙌</string>
     <string name="title_profile">Profile</string>
     <string name="title_edit_profile">Edit Profile</string>
     <string name="title_other_user_profile">Other User Profile</string>
     <string name="title_chat_user">Chat User</string>
     <string name="title_notification">Notification</string>
+    <string name="title_post_detail">I Did Skydiving For The First Time</string>
+    <string name="username_post_detail">Ellis John</string>
+    <string name="time_ago_post_detail">1 day ago</string>
+    <string name="title_post_detail_two">Spending Holidays with Family</string>
+    <string name="username_post_detail_two">Dale Houston</string>
+    <string name="time_ago_post_detail_two">10 min</string>
 
 </resources>

@@ -16,6 +16,6 @@
     <color name="linecolor">#EDEDED</color>
 
     <color name="grey_text">#A9A9A9</color>
-
+<color name="grey_bar">#FFFFFF</color>
 
 </resources>
