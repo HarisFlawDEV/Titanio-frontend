@@ -52,7 +52,7 @@ class ChatAdapter(
             holder.ll_video.visibility = View.VISIBLE
         }
 
-        holder.imgUser?.let {
+        holder.img_user?.let {
             Glide.with(ctx)
                 .load(item.icon)
                 .into(it)
@@ -65,9 +65,27 @@ class ChatAdapter(
             holder.tvMessageCount.visibility = View.GONE
 
         }
-//        if (chatItems.size - 1 == position) {
-//            holder.viewBar.visibility = View.GONE
-//        }
+        holder.constraintParent.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+                if (holder.adapterPosition >= 0) {
+
+                    iChatOnClick.chatOnClick()
+
+
+                }
+            }
+        })
+
+
+        holder.img_user.setOnClickListener(View.OnClickListener {
+            if (holder.adapterPosition >= 0) {
+
+                iChatOnClick.userProfileOnClick()
+
+
+            }
+        })
 
     }
 
@@ -75,14 +93,13 @@ class ChatAdapter(
         return chatItems.size
     }
 
-    inner class CategoryVH(itemView: View) : RecyclerView.ViewHolder(itemView),
-        View.OnClickListener {
+    inner class CategoryVH(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         var tvName: TextView
         var tvMessage: TextView
         var tvDuration: TextView
         var tvMessageCount: TextView
-        var imgUser: ImageView
+        var img_user: ImageView
         var llDuration: LinearLayout
         var ll_photo: LinearLayout
         var ll_video: LinearLayout
@@ -95,7 +112,7 @@ class ChatAdapter(
             tvMessage = itemView.findViewById(R.id.tvMessage)
             tvDuration = itemView.findViewById(R.id.tvDuration)
             tvMessageCount = itemView.findViewById(R.id.tvMessageCount)
-            imgUser = itemView.findViewById(R.id.imgUser)
+            img_user = itemView.findViewById(R.id.img_user)
             llDuration = itemView.findViewById(R.id.llDuration)
             ll_photo = itemView.findViewById(R.id.ll_photo)
             ll_video = itemView.findViewById(R.id.ll_video)
@@ -104,18 +121,11 @@ class ChatAdapter(
 
         }
 
-        override fun onClick(p0: View?) {
-            when (p0?.id) {
-                R.id.constraintParent -> {
-                    iChatOnClick.chatRoomsOnClick()
-                }
 
-            }
-
-        }
     }
 
     interface IChatOnClick {
-        fun chatRoomsOnClick()
+        fun chatOnClick()
+        fun userProfileOnClick()
     }
 }

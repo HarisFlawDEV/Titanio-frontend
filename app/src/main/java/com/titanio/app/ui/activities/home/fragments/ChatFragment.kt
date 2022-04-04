@@ -145,7 +145,15 @@ class ChatFragment : Fragment(), ChatAdapter.IChatOnClick {
         mBinding.rvChat?.adapter = chatAdapter
     }
 
-    override fun chatRoomsOnClick() {
+    override fun chatOnClick() {
+
+        navController?.navigate(R.id.navigation_chat_user)
+
+    }
+
+    override fun userProfileOnClick() {
+
+        navController?.navigate(R.id.navigation_other_user_profile)
 
     }
 }

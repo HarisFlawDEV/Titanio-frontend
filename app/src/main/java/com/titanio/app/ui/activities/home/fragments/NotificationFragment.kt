@@ -7,14 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.titanio.app.R
+import com.titanio.app.databinding.FragmentNotificationBinding
 import com.titanio.app.databinding.FragmentOtherUserProfileBinding
-import com.titanio.app.databinding.FragmentSearchBinding
 import com.titanio.app.ui.activities.home.HomeActivity
 
-class OtherUserProfileFragment : Fragment() {
+class NotificationFragment : Fragment() {
 
-    private lateinit var mBinding: FragmentOtherUserProfileBinding
+    private lateinit var mBinding: FragmentNotificationBinding
     private lateinit var navController: NavController
 
 
@@ -23,7 +22,7 @@ class OtherUserProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentOtherUserProfileBinding.inflate(inflater, container, false)
+        mBinding = FragmentNotificationBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
@@ -37,13 +36,5 @@ class OtherUserProfileFragment : Fragment() {
 
     fun initUI() {
         (activity as HomeActivity?)?.hidebottomBar()
-
-        mBinding.imgBack.setOnClickListener(View.OnClickListener {
-            navController.navigateUp()
-        })
-        mBinding.imgChatUser.setOnClickListener(View.OnClickListener {
-            navController?.navigate(R.id.navigation_chat_user)
-
-        })
     }
 }

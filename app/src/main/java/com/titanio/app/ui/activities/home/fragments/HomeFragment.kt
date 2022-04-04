@@ -93,6 +93,10 @@ class HomeFragment : Fragment(), HomeAdapter.IPostClick {
             postList, requireActivity(), this
         )
         mBinding.rvHome?.adapter = homeAdapter
+
+        mBinding.imgNotification.setOnClickListener(View.OnClickListener {
+            navController.navigate(R.id.navigation_notification)
+        })
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

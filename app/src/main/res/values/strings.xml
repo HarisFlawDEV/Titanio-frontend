@@ -26,5 +26,7 @@
     <string name="title_profile">Profile</string>
     <string name="title_edit_profile">Edit Profile</string>
     <string name="title_other_user_profile">Other User Profile</string>
+    <string name="title_chat_user">Chat User</string>
+    <string name="title_notification">Notification</string>
 
 </resources>

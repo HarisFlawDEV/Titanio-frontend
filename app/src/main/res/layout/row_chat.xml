@@ -15,19 +15,20 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imgUser"
+            android:id="@+id/img_user"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_centerVertical="true"
+            android:clickable="true"
             android:src="@drawable/ic_chatone" />
 
         <LinearLayout
-            android:id="@+id/llMsg"
+            android:id="@+id/ll_msg"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="12dp"
             android:layout_toStartOf="@+id/llDuration"
-            android:layout_toEndOf="@+id/imgUser"
+            android:layout_toEndOf="@+id/img_user"
             android:orientation="vertical">
 
             <TextView
