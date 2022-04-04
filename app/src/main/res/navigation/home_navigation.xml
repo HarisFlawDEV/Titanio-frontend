@@ -89,6 +89,17 @@
         android:label="@string/title_notification"
         tools:layout="@layout/fragment_notification">
 
+        <action
+            android:id="@+id/action_navigation_notification_to_navigation_found_item_owner"
+            app:destination="@id/navigation_found_item_owner" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_found_item_owner"
+        android:name="com.titanio.app.ui.activities.home.fragments.FoundItemOwnerFragment"
+        android:label="@string/title_found_item_owner"
+        tools:layout="@layout/fragment_found_item_owner">
+
     </fragment>
     <fragment
         android:id="@+id/navigation_post_detail_pic"

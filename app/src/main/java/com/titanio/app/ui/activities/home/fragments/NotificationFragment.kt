@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.titanio.app.R
 import com.titanio.app.databinding.FragmentNotificationBinding
 import com.titanio.app.databinding.FragmentOtherUserProfileBinding
 import com.titanio.app.ui.activities.home.HomeActivity
@@ -36,5 +37,17 @@ class NotificationFragment : Fragment() {
 
     fun initUI() {
         (activity as HomeActivity?)?.hidebottomBar()
+
+        mBinding.llParentOne.setOnClickListener(View.OnClickListener {
+
+            val bundle = Bundle()
+            bundle.putBoolean("item_found_by", true)
+            navController.navigate(R.id.navigation_found_item_owner, bundle)
+        })
+        mBinding.llParentThree.setOnClickListener(View.OnClickListener {
+            val bundle = Bundle()
+            bundle.putBoolean("item_found_by", false)
+            navController.navigate(R.id.navigation_found_item_owner, bundle)
+        })
     }
 }
