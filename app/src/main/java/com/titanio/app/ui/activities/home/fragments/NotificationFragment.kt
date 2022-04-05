@@ -45,11 +45,11 @@ class NotificationFragment : Fragment() {
             navController.navigate(R.id.navigation_found_item_owner, bundle)
         })
         mBinding.llParentThree.setOnClickListener(View.OnClickListener {
-            val bundle = Bundle()
-            bundle.putBoolean("item_found_by", false)
-            navController.navigate(R.id.navigation_found_item_owner, bundle)
+//            val bundle = Bundle()
+//            bundle.putBoolean("item_found_by", false)
+//            navController.navigate(R.id.navigation_found_item_owner, bundle)
 
-//            navController.navigate(R.id.navigation_time_line)
+            navController.navigate(R.id.navigation_time_line)
         })
     }
 }

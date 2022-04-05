@@ -146,5 +146,16 @@
         android:label="@string/title_timeline"
         tools:layout="@layout/fragment_time_line">
 
+        <action
+            android:id="@+id/action_navigation_time_line_to_navigation_notification"
+            app:destination="@id/navigation_notification" />
+        <action
+            android:id="@+id/action_navigation_time_line_to_navigation_time_line_detail"
+            app:destination="@id/navigation_time_line_detail" />
     </fragment>
+    <fragment
+        android:id="@+id/navigation_time_line_detail"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.TimeLineDetailFragment"
+        android:label="@string/title_timeline_detail"
+        tools:layout="@layout/fragment_timeline_detail"></fragment>
 </navigation>

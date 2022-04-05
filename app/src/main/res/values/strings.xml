@@ -47,5 +47,6 @@
     <string name="title_subsction_plan_drawer">Subscription Plan</string>
     <string name="title_thank_you">Thank You</string>
     <string name="title_timeline">TimeLine</string>
+    <string name="title_timeline_detail">TimeLine Detail</string>
 
 </resources>

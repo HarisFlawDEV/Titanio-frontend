@@ -8,13 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
-import com.titanio.app.databinding.FragmentTimeLineBinding
+import com.titanio.app.databinding.FragmentNotificationBinding
+import com.titanio.app.databinding.FragmentTimelineDetailBinding
 import com.titanio.app.ui.activities.home.HomeActivity
 
-class TimeLineFragments : Fragment() {
+class TimeLineDetailFragment : Fragment() {
 
-
-    private lateinit var mBinding: FragmentTimeLineBinding
+    private lateinit var mBinding: FragmentTimelineDetailBinding
     private lateinit var navController: NavController
 
 
@@ -23,7 +23,7 @@ class TimeLineFragments : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentTimeLineBinding.inflate(inflater, container, false)
+        mBinding = FragmentTimelineDetailBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
@@ -38,12 +38,24 @@ class TimeLineFragments : Fragment() {
     fun initUI() {
         (activity as HomeActivity?)?.hidebottomBar()
 
-        mBinding.imgNotification.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_notification)
+        mBinding.imgBack.setOnClickListener(View.OnClickListener {
+            navController.navigateUp()
         })
-        mBinding.llParentOne.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_time_line_detail)
+        mBinding.imgLike.setOnClickListener(View.OnClickListener {
+            mBinding.imgLike.setImageResource(R.drawable.ic_like_active)
         })
 
+        mBinding.imgThreeDots.setOnClickListener(View.OnClickListener {
+
+            if (mBinding.llSocialShare.visibility == View.VISIBLE) {
+                mBinding.llSocialShare.visibility = View.GONE
+
+            } else {
+                mBinding.llSocialShare.visibility = View.VISIBLE
+            }
+
+
+        }
+        )
     }
 }
