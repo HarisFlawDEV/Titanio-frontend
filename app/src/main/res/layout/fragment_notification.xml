@@ -1,520 +1,521 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/rr_header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:id="@+id/rr_header"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-
-            android:background="@drawable/bg_login">
-
-            <ImageView
-                android:id="@+id/img_hamburger"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/ic_humberger" />
-
-            <TextView
-                android:id="@+id/tv_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Notifications"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp" />
-
-            <ImageView
-                android:id="@+id/img_notification"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:src="@drawable/ic_notifications" />
-        </RelativeLayout>
-
-        <LinearLayout
-            android:id="@+id/card_view_detail"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="70dp"
-
-            android:background="@drawable/drawbale_cardview_corner"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/ll_parent_one"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:background="@drawable/drwabel_notification_coner"
-                android:orientation="vertical"
-                android:padding="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="5dp"
-                        android:layout_toLeftOf="@+id/tvDuration"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:maxLines="1"
-                        android:text="Luggage Has Found"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
-
-                    <TextView
-                        android:id="@+id/tvDuration"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Just now"
-
-                        android:textColor="#A9A9A9"
-                        android:textSize="@dimen/_8sdp" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvDesc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Hi John, your Luggage has found. Click here for more details."
-                    android:textColor="#252525"
-                    android:textSize="@dimen/_9sdp" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:background="@drawable/drwabel_notification_coner"
-                android:orientation="vertical"
-
-
-                android:padding="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvTitleTwo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="5dp"
-                        android:layout_toLeftOf="@+id/tvDurationTwo"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:maxLines="1"
-                        android:text="Friend Request"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
-
-                    <TextView
-                        android:id="@+id/tvDurationTwo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="15 min"
-                        android:textColor="#A9A9A9"
-                        android:textSize="@dimen/_8sdp" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvDescTwo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
-                    android:textColor="#252525"
-                    android:textSize="@dimen/_9sdp" />
-
-                <LinearLayout
-                    android:id="@+id/llAcceptReject"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="5dp">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btnReject"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:background="@drawable/drawable_scan_again"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="Reject"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_9sdp" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btnAccept"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:background="@drawable/drawable_signup_btn"
-
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="Accept"
-
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_9sdp" />
-
-
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/ll_parent_three"
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:background="@drawable/drwabel_notification_coner"
-                android:orientation="vertical"
-                android:padding="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvTitleThree"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="5dp"
-                        android:layout_toLeftOf="@+id/tvDurationThree"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:maxLines="1"
-                        android:text="Luggage Found For Non App user"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
-
-                    <TextView
-                        android:id="@+id/tvDurationThree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="05 min"
-
-                        android:textColor="#A9A9A9"
-                        android:textSize="@dimen/_8sdp" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvDescThree"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
-                    android:textColor="#252525"
-                    android:textSize="@dimen/_9sdp" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:background="@drawable/drwabel_notification_coner"
-                android:orientation="vertical"
-
-
-                android:padding="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvTitleFour"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="5dp"
-                        android:layout_toLeftOf="@+id/tvDurationFour"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:maxLines="1"
-                        android:text="Group Invitation"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
-
-                    <TextView
-                        android:id="@+id/tvDurationFour"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="1 hour ago"
-                        android:textColor="#A9A9A9"
-                        android:textSize="@dimen/_8sdp" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvDescFour"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
-                    android:textColor="#252525"
-                    android:textSize="@dimen/_9sdp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="5dp">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:background="@drawable/drawable_scan_again"
-
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="Reject"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_9sdp" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:background="@drawable/drawable_signup_btn"
-
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="Accept"
-
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_9sdp" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:background="@drawable/drwabel_notification_coner"
-                android:orientation="vertical"
-                android:padding="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvTitleFive"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="5dp"
-                        android:layout_toLeftOf="@+id/tvDurationFive"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:maxLines="1"
-                        android:text="Notification"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
-
-                    <TextView
-                        android:id="@+id/tvDurationFive"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Yesterday"
-
-                        android:textColor="#A9A9A9"
-                        android:textSize="@dimen/_8sdp" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvDescFive"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
-                    android:textColor="#252525"
-                    android:textSize="@dimen/_9sdp" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:background="@drawable/drwabel_notification_coner"
-                android:orientation="vertical"
-                android:padding="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvTitleSix"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="5dp"
-                        android:layout_toLeftOf="@+id/tvDurationSix"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:maxLines="1"
-                        android:text="Notification"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
-
-                    <TextView
-                        android:id="@+id/tvDurationSix"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="12/16/21"
-
-                        android:textColor="#A9A9A9"
-                        android:textSize="@dimen/_8sdp" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvDescSix"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
-                    android:textColor="#252525"
-                    android:textSize="@dimen/_9sdp" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:background="@drawable/drwabel_notification_coner"
-                android:orientation="vertical"
-                android:padding="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvTitleSeven"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="5dp"
-                        android:layout_toLeftOf="@+id/tvDurationSeven"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:maxLines="1"
-                        android:text="Notification"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
-
-                    <TextView
-                        android:id="@+id/tvDurationSeven"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="12/15/21"
-
-                        android:textColor="#A9A9A9"
-                        android:textSize="@dimen/_8sdp" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvDescSeven"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
-                    android:textColor="#252525"
-                    android:textSize="@dimen/_9sdp" />
-
-            </LinearLayout>
-        </LinearLayout>
+        android:layout_height="130dp"
+
+        android:background="@drawable/bg_login">
+
+        <ImageView
+            android:id="@+id/img_hamburger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_humberger" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Notifications"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/ic_notifications" />
     </RelativeLayout>
 
-</ScrollView>
+
+    <LinearLayout
+        android:id="@+id/card_view_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/drawbale_cardview_corner"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_parent_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/drwabel_notification_coner"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toLeftOf="@+id/tvDuration"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="1"
+                            android:text="Luggage Has Found"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Just now"
+
+                            android:textColor="#A9A9A9"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Hi John, your Luggage has found. Click here for more details."
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/drwabel_notification_coner"
+                    android:orientation="vertical"
+
+
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitleTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toLeftOf="@+id/tvDurationTwo"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="1"
+                            android:text="Friend Request"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDurationTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="15 min"
+                            android:textColor="#A9A9A9"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDescTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/llAcceptReject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnReject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/drawable_scan_again"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Reject"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnAccept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/drawable_signup_btn"
+
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Accept"
+
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_parent_three"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/drwabel_notification_coner"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitleThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toLeftOf="@+id/tvDurationThree"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="1"
+                            android:text="Luggage Found For Non App user"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDurationThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="05 min"
+
+                            android:textColor="#A9A9A9"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDescThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/drwabel_notification_coner"
+                    android:orientation="vertical"
+
+
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitleFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toLeftOf="@+id/tvDurationFour"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="1"
+                            android:text="Group Invitation"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDurationFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="1 hour ago"
+                            android:textColor="#A9A9A9"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDescFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/drawable_scan_again"
+
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Reject"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/drawable_signup_btn"
+
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Accept"
+
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/drwabel_notification_coner"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitleFive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toLeftOf="@+id/tvDurationFive"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="1"
+                            android:text="Notification"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDurationFive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Yesterday"
+
+                            android:textColor="#A9A9A9"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDescFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/drwabel_notification_coner"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitleSix"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toLeftOf="@+id/tvDurationSix"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="1"
+                            android:text="Notification"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDurationSix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="12/16/21"
+
+                            android:textColor="#A9A9A9"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDescSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+
+                    android:background="@drawable/drwabel_notification_coner"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitleSeven"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toLeftOf="@+id/tvDurationSeven"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="1"
+                            android:text="Notification"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDurationSeven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="12/15/21"
+
+                            android:textColor="#A9A9A9"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDescSeven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Neque iuorro quisquam est qui dolim uit ipsum quia vehicula."
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -43,4 +43,9 @@
     <string name="title_found_item_owner">Found Item Owner</string>
     <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
 
+    <string name="title_add_post">Add Post</string>
+    <string name="title_subsction_plan_drawer">Subscription Plan</string>
+    <string name="title_thank_you">Thank You</string>
+    <string name="title_timeline">TimeLine</string>
+
 </resources>

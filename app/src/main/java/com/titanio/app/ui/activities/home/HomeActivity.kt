@@ -81,6 +81,14 @@ class HomeActivity : AppCompatActivity() {
             mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_profile_selected)
             mNavController.navigate(R.id.navigation_profile)
         })
+        mBinding.includeHome.imgAddVideoCenter.setOnClickListener(View.OnClickListener {
+
+            mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
+            mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
+            mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
+            mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
+            mNavController.navigate(R.id.navigation_add_post)
+        })
 
     }
 
@@ -99,6 +107,15 @@ class HomeActivity : AppCompatActivity() {
         mBinding.includeHome.rrBottomBar.visibility = View.VISIBLE
     }
 
+    fun navigateToProfile() {
+        mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
+        mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
+        mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
+        mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_profile_selected)
+        mNavController.navigate(R.id.navigation_profile)
+
+
+    }
 
     override fun onBackPressed() {
         super.onBackPressed()

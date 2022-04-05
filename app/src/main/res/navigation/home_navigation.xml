@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_navigation_home_to_navigation_notification"
             app:destination="@id/navigation_notification" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_post_detail_pic"
+            app:destination="@id/navigation_post_detail_pic" />
     </fragment>
 
 
@@ -106,6 +109,42 @@
         android:name="com.titanio.app.ui.activities.home.fragments.PostDetailPicFragment"
         android:label="@string/post_detail_pic"
         tools:layout="@layout/fragment_post_detail_pic">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_post"
+        android:name="com.titanio.app.ui.activities.home.fragments.AddPostFrgagment"
+        android:label="@string/title_add_post"
+        tools:layout="@layout/fragment_add_post">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_subscription_plan_home"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.SubscriptionPlanFragment"
+        android:label="@string/title_subsction_plan_drawer"
+        tools:layout="@layout/fragment_subscription_plan_drawer">
+
+        <action
+            android:id="@+id/action_navigation_subscription_plan_home_to_navigation_thank_you"
+            app:destination="@id/navigation_thank_you" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_thank_you"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.ThankYouFragment"
+        android:label="@string/title_thank_you"
+        tools:layout="@layout/fragment_thank_you">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_time_line"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.TimeLineFragments"
+        android:label="@string/title_timeline"
+        tools:layout="@layout/fragment_time_line">
 
     </fragment>
 </navigation>

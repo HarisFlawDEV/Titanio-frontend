@@ -16,6 +16,7 @@ class PostDetailVideoActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityPostDetailVideoBinding
     private var mAppBarConfiguration: AppBarConfiguration? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(
@@ -33,7 +34,10 @@ class PostDetailVideoActivity : AppCompatActivity() {
         mAppBarConfiguration = AppBarConfiguration.Builder(R.id.navigation_home)
             .build()
 
-        //   FullScreencall()
+        mBinding.imgBack.setOnClickListener(View.OnClickListener {
+
+            finish()
+        })
 
 
         fun FullScreencall() {

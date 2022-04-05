@@ -24,13 +24,14 @@ class PostDetailPicFragment : Fragment() {
 
     private lateinit var mBinding: FragmentPostDetailPicBinding
     private lateinit var mnavController: NavController
-
+    var isVideoEnabled = false
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         mBinding = FragmentPostDetailPicBinding.inflate(inflater, container, false)
-        return mBinding.root }
+        return mBinding.root
+    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -45,7 +46,7 @@ class PostDetailPicFragment : Fragment() {
         (activity as HomeActivity?)?.hidebottomBar()
 
         if (arguments != null) {
-            var isVideoEnabled = requireArguments().getBoolean("is_video");
+            isVideoEnabled = requireArguments().getBoolean("is_video");
 
             if (isVideoEnabled) {
                 mBinding.imgVideo.visibility = View.VISIBLE
@@ -72,8 +73,7 @@ class PostDetailPicFragment : Fragment() {
                         .into(it)
                 }
 
-            }
-            else{
+            } else {
                 mBinding.imgVideo.visibility = View.GONE
 
                 mBinding.tvTitle.text = getString(R.string.title_post_detail_two)
@@ -103,20 +103,54 @@ class PostDetailPicFragment : Fragment() {
 
         }
 
-        mBinding.cvCommentBtn.setOnClickListener (View.OnClickListener {
+        mBinding.cvCommentBtn.setOnClickListener(View.OnClickListener {
             mBinding.cvCommentBtn.visibility = View.GONE
             mBinding.cvCommentBar.visibility = View.VISIBLE
+        }
+        )
+        mBinding.imgThreeDots.setOnClickListener(View.OnClickListener {
+
+            if (isVideoEnabled) {
+                if (mBinding.llSocialShare.visibility == View.VISIBLE) {
+                    mBinding.llSocialShare.visibility = View.GONE
+
+                } else {
+                    mBinding.llSocialShare.visibility = View.VISIBLE
+                }
+            } else {
+
+                if (mBinding.llOptionsPost.visibility == View.VISIBLE) {
+                    mBinding.llOptionsPost.visibility = View.GONE
+
+                } else {
+                    mBinding.llOptionsPost.visibility = View.VISIBLE
+                }
             }
+
+
+        }
         )
 
-        mBinding.llNoCmt.setOnClickListener (View.OnClickListener {
+        mBinding.imgBack.setOnClickListener(View.OnClickListener {
+
+            mnavController.navigateUp()
+        }
+        )
+
+        mBinding.llNoCmt.setOnClickListener(View.OnClickListener {
             mBinding.cvCommentBtn.visibility = View.VISIBLE
             mBinding.cvCommentBar.visibility = View.GONE
         }
         )
 
         mBinding.imgVideo.setOnClickListener(View.OnClickListener {
-            startActivity(Intent( requireActivity(), PostDetailVideoActivity::class.java))
+            startActivity(Intent(requireActivity(), PostDetailVideoActivity::class.java))
+        })
+        mBinding.imgLike.setOnClickListener(View.OnClickListener {
+            mBinding.imgLike.setImageResource(R.drawable.ic_like_active)
+        })
+        mBinding.llProfileClick.setOnClickListener(View.OnClickListener {
+            mnavController.navigate(R.id.navigation_other_user_profile)
         })
     }
 

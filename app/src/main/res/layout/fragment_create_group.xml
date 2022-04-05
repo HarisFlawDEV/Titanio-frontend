@@ -32,16 +32,14 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_18sdp" />
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:id="@+id/cardViewLogin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/tv_subscription_plan"
             android:layout_marginTop="@dimen/_18sdp"
-            android:elevation="4dp"
-            android:outlineSpotShadowColor="@color/black"
-            app:cardCornerRadius="30dp"
-            card_view:cardElevation="6dp">
+            android:background="@drawable/drawbale_cardview_corner"
+            >
 
 
             <LinearLayout
@@ -71,21 +69,21 @@
 
 
                 <ImageView
-                    android:layout_marginTop="@dimen/_40sdp"
-                    android:layout_gravity="center"
                     android:layout_width="270dp"
                     android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_40sdp"
                     android:src="@drawable/ic_group" />
 
                 <TextView
-                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
                     android:fontFamily="@font/poppins_medium"
                     android:text="There is no group created"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -126,7 +124,6 @@
             </LinearLayout>
 
 
-
-        </androidx.cardview.widget.CardView>
+        </LinearLayout>
     </RelativeLayout>
 </ScrollView>
