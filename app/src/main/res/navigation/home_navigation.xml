@@ -158,4 +158,9 @@
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.TimeLineDetailFragment"
         android:label="@string/title_timeline_detail"
         tools:layout="@layout/fragment_timeline_detail"></fragment>
+    <fragment
+        android:id="@+id/navigation_our_brands"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.OurBrandsFragment"
+        android:label="@string/title_our_brands"
+        tools:layout="@layout/fragment_our_brands"></fragment>
 </navigation>

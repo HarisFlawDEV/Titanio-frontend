@@ -41,6 +41,7 @@
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/row_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/test.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawabe_another_luggage.xml" value="0.1335" />
+        <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawable_brand_corner.xml" value="0.131" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawable_grey_btn_gradient.xml" value="0.1335" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawable_login_btn.xml" value="0.131" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawbale_cardview_corner.xml" value="0.1335" />
@@ -48,6 +49,7 @@
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawble_corner_sheet.xml" value="0.131" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drwabel_notification_coner.xml" value="0.1825" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/round_corner_edit_text.xml" value="0.1825" />
+        <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/activity_home.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/activity_post_detail_video.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/content_main.xml" value="0.10009057971014493" />
@@ -55,10 +57,12 @@
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_apple_tracking.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_chat_user.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_create_group.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_found_item_owner.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_friends_in_group.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_home.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_notification.xml" value="0.15" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_other_user_profile.xml" value="0.14447463768115942" />
+        <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_our_brands.xml" value="0.22" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_post_detail_pic.xml" value="0.2" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_profile_completed.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_subscription_plan.xml" value="0.25" />
