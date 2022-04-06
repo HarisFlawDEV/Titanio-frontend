@@ -79,5 +79,8 @@
     <string name="title_timeline">TimeLine</string>
     <string name="title_timeline_detail">TimeLine Detail</string>
     <string name="title_our_brands">Our Brands</string>
+    <string name="title_luggage_found">Luggage Found</string>
+    <string name="title_found_item">Found Item</string>
+    <string name="title_my_group">My Group</string>
 
 </resources>

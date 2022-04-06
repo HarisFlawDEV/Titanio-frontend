@@ -8,8 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.databinding.FragmentAddPostBinding
-import com.titanio.app.databinding.FragmentNotificationBinding
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 
 class AddPostFrgagment : Fragment() {
 
@@ -35,12 +34,12 @@ class AddPostFrgagment : Fragment() {
     }
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
         mBinding.imgBack.setOnClickListener(View.OnClickListener {
             navController.navigateUp()
         })
         mBinding.btnPost.setOnClickListener(View.OnClickListener {
-            (activity as HomeActivity?)?.navigateToProfile()
+            (activity as DrawerActivity?)?.navigateToProfile()
 
         })
         mBinding.cvWhoCanSee.setOnClickListener(View.OnClickListener {

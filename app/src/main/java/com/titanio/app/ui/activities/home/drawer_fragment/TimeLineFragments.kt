@@ -39,7 +39,7 @@ class TimeLineFragments : Fragment() {
         (activity as DrawerActivity?)?.hidebottomBar()
 
         mBinding.imgNotification.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_notification)
+            navController.navigate(R.id.nav_notifications)
         })
         mBinding.llParentOne.setOnClickListener(View.OnClickListener {
             navController.navigate(R.id.navigation_time_line_detail)

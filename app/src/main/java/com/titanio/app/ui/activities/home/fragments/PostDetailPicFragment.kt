@@ -15,8 +15,7 @@ import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentPostDetailPicBinding
-import com.titanio.app.databinding.FragmentProfileCompletedBinding
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.postdetailvideo.PostDetailVideoActivity
 import java.net.URI
 
@@ -43,7 +42,7 @@ class PostDetailPicFragment : Fragment() {
 
     private fun initUI() {
 
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
         if (arguments != null) {
             isVideoEnabled = requireArguments().getBoolean("is_video");

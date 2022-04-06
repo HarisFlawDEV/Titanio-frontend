@@ -152,7 +152,7 @@ class DrawerActivity : AppCompatActivity() {
         clickListener()
     }
 
-    fun clickListener(){
+    fun clickListener() {
 
         mBinding.appBarDrawer.includeHome.llChat.setOnClickListener(View.OnClickListener {
 
@@ -169,7 +169,7 @@ class DrawerActivity : AppCompatActivity() {
             mBinding.appBarDrawer.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
             mBinding.appBarDrawer.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
             mBinding.appBarDrawer.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
-            mNavController.navigate(R.id.navigation_home)
+            mNavController.navigate(R.id.nav_home)
         })
         mBinding.appBarDrawer.includeHome.llSearch.setOnClickListener(View.OnClickListener {
 
@@ -185,10 +185,20 @@ class DrawerActivity : AppCompatActivity() {
             mBinding.appBarDrawer.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
             mBinding.appBarDrawer.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
             mBinding.appBarDrawer.includeHome.imgProfile.setImageResource(R.drawable.ic_profile_selected)
-            mNavController.navigate(R.id.navigation_profile)
+            mNavController.navigate(R.id.nav_my_profile)
+        })
+
+        mBinding.appBarDrawer.includeHome.imgAddVideoCenter.setOnClickListener(View.OnClickListener {
+
+            mBinding.appBarDrawer.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
+            mBinding.appBarDrawer.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
+            mBinding.appBarDrawer.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
+            mBinding.appBarDrawer.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
+            mNavController.navigate(R.id.navigation_add_post)
         })
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.drawer, menu)
@@ -199,7 +209,6 @@ class DrawerActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_drawer)
         return navController.navigateUp(mAppBarConfiguration) || super.onSupportNavigateUp()
     }
-
 
 
     fun hidebottomBar() {
@@ -339,5 +348,14 @@ class DrawerActivity : AppCompatActivity() {
 //        })
     }
 
+    fun navigateToProfile() {
+        mBinding.appBarDrawer.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
+        mBinding.appBarDrawer.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
+        mBinding.appBarDrawer.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
+        mBinding.appBarDrawer.includeHome.imgProfile.setImageResource(R.drawable.ic_profile_selected)
+        mNavController.navigate(R.id.nav_my_profile)
+
+
+    }
 
 }

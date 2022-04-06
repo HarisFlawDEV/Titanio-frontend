@@ -96,7 +96,7 @@ class HomeFragment : Fragment(), HomeAdapter.IPostClick {
         mBinding.rvHome?.adapter = homeAdapter
 
         mBinding.imgNotification.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_notification)
+            navController.navigate(R.id.nav_notifications)
         })
     }
 

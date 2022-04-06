@@ -12,9 +12,18 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home">
 
+
         <action
-            android:id="@+id/action_navigation_home_to_navigation_other_user_profile"
+            android:id="@+id/action_nav_home_to_navigation_post_detail_pic"
+            app:destination="@id/navigation_post_detail_pic" />
+        <action
+            android:id="@+id/action_nav_home_to_navigation_other_user_profile"
             app:destination="@id/navigation_other_user_profile" />
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+
     </fragment>
 
 
@@ -31,7 +40,6 @@
     </fragment>
 
 
-
     <fragment
         android:id="@+id/navigation_thank_you"
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.ThankYouFragment"
@@ -42,29 +50,53 @@
 
     <fragment
         android:id="@+id/nav_my_groups"
-        android:name="com.titanio.app.ui.activities.signup.fragments.SubscriptionPlanFragment"
-        android:label="Subscription"
-        tools:layout="@layout/fragment_subscription_plan"/>
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyGroupsFragment"
+        android:label="@string/title_my_group"
+        tools:layout="@layout/fragment_my_groups" />
 
     <fragment
         android:id="@+id/nav_my_luggage"
         android:name="com.titanio.app.ui.activities.signup.fragments.SubscriptionPlanFragment"
         android:label="Subscription"
-        tools:layout="@layout/fragment_subscription_plan"/>
+        tools:layout="@layout/fragment_subscription_plan" />
 
 
+    <fragment
+        android:id="@+id/navigation_other_user_profile"
+        android:name="com.titanio.app.ui.activities.home.fragments.OtherUserProfileFragment"
+        android:label="@string/title_other_user_profile"
+        tools:layout="@layout/fragment_other_user_profile">
+
+
+        <action
+            android:id="@+id/action_navigation_other_user_profile_to_navigation_chat_user3"
+            app:destination="@id/navigation_chat_user" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat_user"
+        android:name="com.titanio.app.ui.activities.home.fragments.ChatUserFragment"
+        android:label="@string/title_chat_user"
+        tools:layout="@layout/fragment_chat_user">
+
+        <action
+            android:id="@+id/action_navigation_chat_user_to_navigation_other_user_profile"
+            app:destination="@id/navigation_other_user_profile" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_time_line"
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.TimeLineFragments"
         android:label="@string/title_timeline"
         tools:layout="@layout/fragment_time_line">
 
-        <action
-            android:id="@+id/action_navigation_time_line_to_navigation_notification"
-            app:destination="@id/navigation_notification" />
+
         <action
             android:id="@+id/action_navigation_time_line_to_navigation_time_line_detail"
             app:destination="@id/navigation_time_line_detail" />
+        <action
+            android:id="@+id/action_navigation_time_line_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+
     </fragment>
     <fragment
         android:id="@+id/navigation_time_line_detail"
@@ -80,8 +112,18 @@
         <action
             android:id="@+id/action_nav_my_profile_to_navigation_edit_profile"
             app:destination="@id/navigation_edit_profile" />
+        <action
+            android:id="@+id/action_nav_my_profile_to_navigation_app_otp"
+            app:destination="@id/navigation_app_otp" />
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_app_otp"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.OtpVerifyFragment"
+        android:label="@string/title_app_otp"
+        tools:layout="@layout/fragment_otp_verification">
+
+    </fragment>
     <fragment
         android:id="@+id/navigation_edit_profile"
         android:name="com.titanio.app.ui.activities.home.fragments.EditProfileFragment"
@@ -90,6 +132,13 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_post_detail_pic"
+        android:name="com.titanio.app.ui.activities.home.fragments.PostDetailPicFragment"
+        android:label="@string/post_detail_pic"
+        tools:layout="@layout/fragment_post_detail_pic">
+
+    </fragment>
 
     <fragment
         android:id="@+id/nav_notifications"
@@ -110,4 +159,62 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/nav_luggage_found"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.LuggageFounfFragment"
+        android:label="@string/title_luggage_found"
+        tools:layout="@layout/fragment_luggage_found">
+
+        <action
+            android:id="@+id/action_nav_luggage_found_to_nav_found_item"
+            app:destination="@id/nav_found_item" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_found_item"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.FoundItemFragment"
+        android:label="@string/title_found_item"
+        tools:layout="@layout/fragment_found_item">
+
+        <action
+            android:id="@+id/action_nav_found_item_to_navigation_thank_you"
+            app:destination="@id/navigation_thank_you" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.titanio.app.ui.activities.home.fragments.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search">
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.titanio.app.ui.activities.home.fragments.ChatFragment"
+        android:label="@string/title_chat"
+        tools:layout="@layout/fragment_chat">
+
+
+        <action
+            android:id="@+id/action_navigation_chat_to_navigation_chat_user3"
+            app:destination="@id/navigation_chat_user" />
+        <action
+            android:id="@+id/action_navigation_chat_to_navigation_other_user_profile2"
+            app:destination="@id/navigation_other_user_profile" />
+        <action
+            android:id="@+id/action_navigation_chat_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_add_post"
+        android:name="com.titanio.app.ui.activities.home.fragments.AddPostFrgagment"
+        android:label="@string/title_add_post"
+        tools:layout="@layout/fragment_add_post">
+
+        <action
+            android:id="@+id/action_navigation_add_post_to_nav_my_profile"
+            app:destination="@id/nav_my_profile" />
+    </fragment>
 </navigation>

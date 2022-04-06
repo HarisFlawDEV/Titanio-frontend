@@ -143,6 +143,10 @@ class ChatFragment : Fragment(), ChatAdapter.IChatOnClick {
             messageList, requireActivity(), this
         )
         mBinding.rvChat?.adapter = chatAdapter
+
+        mBinding.imgNotification.setOnClickListener(View.OnClickListener {
+            navController?.navigate(R.id.nav_notifications)
+        })
     }
 
     override fun chatOnClick() {

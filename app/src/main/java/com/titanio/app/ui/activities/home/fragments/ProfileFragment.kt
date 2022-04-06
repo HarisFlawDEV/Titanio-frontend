@@ -42,5 +42,8 @@ class ProfileFragment : Fragment() {
         mBinding.llEditPrfile.setOnClickListener(View.OnClickListener {
             navController?.navigate(R.id.navigation_edit_profile)
         })
+        mBinding.tvUnverify.setOnClickListener(View.OnClickListener {
+            navController?.navigate(R.id.navigation_app_otp)
+        })
     }
 }

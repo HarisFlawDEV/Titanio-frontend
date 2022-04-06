@@ -9,9 +9,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentOtherUserProfileBinding
-import com.titanio.app.databinding.FragmentSearchBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 
 class OtherUserProfileFragment : Fragment() {
 
