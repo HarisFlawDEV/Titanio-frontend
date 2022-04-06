@@ -14,6 +14,11 @@
             android:name=".ui.activities.postdetailvideo.PostDetailVideoActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.activities.home.DrawerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/Theme.Titanio.NoActionBar" />
+        <activity
             android:name=".ui.activities.home.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

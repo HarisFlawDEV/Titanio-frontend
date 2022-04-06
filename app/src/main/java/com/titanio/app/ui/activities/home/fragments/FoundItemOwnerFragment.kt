@@ -17,7 +17,7 @@ import androidx.viewpager.widget.ViewPager
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentFoundItemOwnerBinding
 import com.titanio.app.model.ItemFound
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.adapters.FoundItemAdapter
 import com.titanio.app.ui.activities.signup.fragments.layouts
 import com.yarolegovich.discretescrollview.DSVOrientation
@@ -74,7 +74,7 @@ class FoundItemOwnerFragment : Fragment(),
 
         }
 
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
         data = getData()
 
         mBinding.itemPicker.setOrientation(DSVOrientation.HORIZONTAL)

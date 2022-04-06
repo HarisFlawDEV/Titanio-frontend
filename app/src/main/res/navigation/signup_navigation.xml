@@ -14,6 +14,15 @@
     </fragment>
 
     <fragment
+        android:id="@+id/navigation_app_otp"
+        android:name="com.titanio.app.ui.activities.signup.fragments.OtpVerificationFragment"
+        android:label="@string/title_app_otp"
+        tools:layout="@layout/fragment_otp_verification">
+
+    </fragment>
+
+
+    <fragment
         android:id="@+id/navigation_app_setup"
         android:name="com.titanio.app.ui.activities.signup.fragments.AppSetupActivity"
         android:label="@string/title_app_setup"

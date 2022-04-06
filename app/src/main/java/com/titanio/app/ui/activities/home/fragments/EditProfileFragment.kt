@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.databinding.FragmentEditProfileBinding
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.HomeActivity
 
 class EditProfileFragment : Fragment() {
@@ -35,7 +36,7 @@ class EditProfileFragment : Fragment() {
 
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
         mBinding.btnSave.setOnClickListener(View.OnClickListener {
             navController?.navigateUp()

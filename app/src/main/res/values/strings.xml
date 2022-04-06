@@ -6,6 +6,7 @@
 
     <string name="title_signup">Sign up</string>
     <string name="title_app_setup">App Setup</string>
+    <string name="title_app_otp">OTP Verification</string>
     <string name="title_scan_qr_code">Scan QR Code</string>
     <string name="title_suit_case_detail">Suit Case Detail</string>
     <string name="navigation_suit_case_added">Suit Case Added</string>
@@ -31,6 +32,35 @@
     <string name="title_profile">Profile</string>
     <string name="title_edit_profile">Edit Profile</string>
     <string name="title_other_user_profile">Other User Profile</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_subscription">Subscription</string>
+    <string name="menu_my_groups">My groups</string>
+    <string name="menu_flight_tracker_pickup"><![CDATA[Flight Tracker & Pickup]]></string>
+    <string name="menu_pickup_requests">Pickup Requests</string>
+    <string name="menu_my_pickups">My Pickups</string>
+    <string name="menu_my_flights">My Flights</string>
+    <string name="menu_shared_flights">Shared Flights</string>
+    <string name="menu_my_luggage">My Luggage</string>
+    <string name="menu_my_friends">My Friends</string>
+    <string name="menu_timeline">Timeline</string>
+    <string name="menu_luggage_found">Luggage Found</string>
+    <string name="menu_my_profile">My Profile</string>
+    <string name="menu_our_brands">Our Brands</string>
+    <string name="menu_invite_friends">Invite Friends</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_report_us">Report Us</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
     <string name="title_chat_user">Chat User</string>
     <string name="title_notification">Notification</string>
     <string name="title_post_detail">I Did Skydiving For The First Time</string>

@@ -29,11 +29,12 @@ class HomeActivity : AppCompatActivity() {
         mBinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
+
         initUI()
     }
 
     fun initUI() {
-        mNavController = findNavController(R.id.nav_home_host_fragment)
+//        mNavController = findNavController(R.id.nav_home_host_fragment)
 
         setSupportActionBar(mBinding.mainToolbar)
         getSupportActionBar()?.hide()
@@ -41,7 +42,7 @@ class HomeActivity : AppCompatActivity() {
 
         mAppBarConfiguration = AppBarConfiguration.Builder(R.id.navigation_home)
             .build()
-        mNavController = Navigation.findNavController(this, R.id.nav_home_host_fragment)
+//        mNavController = Navigation.findNavController(this, R.id.nav_home_host_fragment)
         NavigationUI.setupActionBarWithNavController(
             this, mNavController,
             mAppBarConfiguration!!
@@ -117,53 +118,53 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_home_host_fragment)
-
-        when (NavHostFragment.findNavController(navHostFragment!!).currentDestination?.id) {
-            R.id.navigation_home -> {
-                showBottmBar()
-
-                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_home_selected)
-                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
-                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
-                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
-
-            }
-
-            R.id.navigation_search -> {
-                showBottmBar()
-
-                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
-                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_selected)
-                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
-                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
-
-            }
-            R.id.navigation_chat -> {
-                showBottmBar()
-
-                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
-                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
-                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_chat_selected)
-                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
-
-            }
-            R.id.navigation_profile -> {
-                showBottmBar()
-
-
-                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
-                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
-                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
-                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_profile_selected)
-
-            }
-
-        }
-    }
+//    override fun onBackPressed() {
+//        super.onBackPressed()
+//
+//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_home_host_fragment)
+//
+//        when (NavHostFragment.findNavController(navHostFragment!!).currentDestination?.id) {
+//            R.id.navigation_home -> {
+//                showBottmBar()
+//
+//                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_home_selected)
+//                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
+//                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
+//                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
+//
+//            }
+//
+//            R.id.navigation_search -> {
+//                showBottmBar()
+//
+//                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
+//                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_selected)
+//                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
+//                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
+//
+//            }
+//            R.id.navigation_chat -> {
+//                showBottmBar()
+//
+//                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
+//                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
+//                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_chat_selected)
+//                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
+//
+//            }
+//            R.id.navigation_profile -> {
+//                showBottmBar()
+//
+//
+//                mBinding.includeHome.imgNavHome.setImageResource(R.drawable.ic_menu_home)
+//                mBinding.includeHome.imgNavSearch.setImageResource(R.drawable.ic_search_menu)
+//                mBinding.includeHome.imgChat.setImageResource(R.drawable.ic_menu_chat)
+//                mBinding.includeHome.imgProfile.setImageResource(R.drawable.ic_profile_selected)
+//
+//            }
+//
+//        }
+//    }
 
     fun unSelecteAll() {
 

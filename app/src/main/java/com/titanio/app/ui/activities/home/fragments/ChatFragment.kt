@@ -12,7 +12,7 @@ import com.titanio.app.R
 import com.titanio.app.databinding.FragmentChatBinding
 import com.titanio.app.databinding.FragmentHomeBinding
 import com.titanio.app.model.ChatModel
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.adapters.ChatAdapter
 
 class ChatFragment : Fragment(), ChatAdapter.IChatOnClick {
@@ -129,7 +129,7 @@ class ChatFragment : Fragment(), ChatAdapter.IChatOnClick {
 
 
     fun initUI() {
-        (activity as HomeActivity?)?.showBottmBar()
+        (activity as DrawerActivity?)?.showBottmBar()
 
         mBinding.rvChat?.setLayoutManager(
             LinearLayoutManager(

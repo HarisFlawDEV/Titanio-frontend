@@ -8,9 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.titanio.app.databinding.FragmentSubscriptionPlanDrawerBinding
 import com.titanio.app.databinding.FragmentThankYouBinding
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 
 class ThankYouFragment : Fragment() {
 
@@ -37,11 +36,11 @@ class ThankYouFragment : Fragment() {
     }
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
 
         mBinding.btnGoToHome.setOnClickListener(View.OnClickListener {
-            startActivity(Intent( requireActivity(), HomeActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
+            startActivity(Intent( requireActivity(), DrawerActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
             requireActivity().finish()
         })
     }

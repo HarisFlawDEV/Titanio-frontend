@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_drawer_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@drawable/ic_drawer_subscription"
+            android:title="@string/menu_subscription" />
+        <item
+            android:id="@+id/nav_my_groups"
+            android:icon="@drawable/ic_drawer_my_groups"
+            android:title="@string/menu_my_groups" />
+
+        <item
+            android:id="@+id/nav_flight_tracker"
+            android:icon="@drawable/ic_drawer_flight_tracker"
+            android:title="@string/menu_flight_tracker_pickup">
+            <menu>
+                <item
+                    android:id="@+id/nav_pickup_requests"
+                    android:title="@string/menu_pickup_requests" />
+
+                <item
+                    android:id="@+id/nav_my_pickups"
+                    android:title="@string/menu_my_pickups" />
+
+                <item
+                    android:id="@+id/nav_my_flights"
+                    android:title="@string/menu_my_flights" />
+
+                <item
+                    android:id="@+id/nav_shared_flights"
+                    android:title="@string/menu_shared_flights" />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_my_luggage"
+            android:icon="@drawable/ic_drawer_my_luggage"
+            android:title="@string/menu_my_luggage" />
+
+        <item
+            android:id="@+id/nav_my_friends"
+            android:icon="@drawable/ic_drawer_my_friends"
+            android:title="@string/menu_my_friends" />
+
+        <item
+            android:id="@+id/nav_timeline"
+            android:icon="@drawable/ic_drawer_timeline"
+            android:title="@string/menu_timeline" />
+
+
+        <item
+            android:id="@+id/nav_luggage_found"
+            android:icon="@drawable/ic_drawer_luggage_found"
+            android:title="@string/menu_luggage_found" />
+
+
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_drawer_my_profile"
+            android:title="@string/menu_my_profile" />
+
+
+
+        <item
+            android:id="@+id/nav_our_brands"
+            android:icon="@drawable/ic_drawer_brands"
+            android:title="@string/menu_our_brands" />
+
+
+        <item
+            android:id="@+id/nav_invite_friends"
+            android:icon="@drawable/ic_drawer_invite_friends"
+            android:title="@string/menu_invite_friends" />
+
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_drawer_notifications"
+            android:title="@string/menu_notifications" />
+
+
+        <item
+            android:id="@+id/nav_report_us"
+            android:icon="@drawable/ic_drawer_report_us"
+            android:title="@string/menu_report_us" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/menu_settings" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_drawer_logout"
+            android:title="@string/menu_logout" />
+
+
+    </group>
+</menu>

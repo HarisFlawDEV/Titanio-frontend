@@ -9,6 +9,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentProfileBinding
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.HomeActivity
 
 class ProfileFragment : Fragment() {
@@ -36,7 +37,7 @@ class ProfileFragment : Fragment() {
 
 
     fun initUI() {
-        (activity as HomeActivity?)?.showBottmBar()
+        (activity as DrawerActivity?)?.showBottmBar()
 
         mBinding.llEditPrfile.setOnClickListener(View.OnClickListener {
             navController?.navigate(R.id.navigation_edit_profile)

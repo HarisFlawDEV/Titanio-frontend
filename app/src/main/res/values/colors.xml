@@ -18,4 +18,10 @@
     <color name="grey_text">#A9A9A9</color>
 <color name="grey_bar">#FFFFFF</color>
 
+    <color name="otp_field_color">#ffffff</color>
+    <color name="otp_field_color_border">#ffffff</color>
+    <color name="otp_field_color_dialog">#ffffff</color>
+    <color name="otp_field_color_border_dialog">#A9A9A9</color>
+
+
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import com.titanio.app.databinding.ActivityLoginBinding
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.HomeActivity
 import com.titanio.app.ui.activities.signup.SignUpActivity
 
@@ -33,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
         mBinding.btnLoginScreen.setOnClickListener(View.OnClickListener {
 
-            startActivity(Intent(this@LoginActivity, HomeActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
+            startActivity(Intent(this@LoginActivity, DrawerActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
             finish()
         })
     }

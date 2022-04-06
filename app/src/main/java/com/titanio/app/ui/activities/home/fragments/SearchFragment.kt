@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.databinding.FragmentSearchBinding
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.HomeActivity
 
 class SearchFragment : Fragment() {
@@ -35,14 +36,14 @@ class SearchFragment : Fragment() {
     }
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
 
         mBinding.imgBack.setOnClickListener(View.OnClickListener {
 
             navController.navigateUp()
-            (activity as HomeActivity?)?.showBottmBar()
-            (activity as HomeActivity?)?.unSelecteAll()
+            (activity as DrawerActivity?)?.showBottmBar()
+            (activity as DrawerActivity?)?.unSelecteAll()
 
 
         })

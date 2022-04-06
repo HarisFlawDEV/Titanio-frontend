@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentNotificationBinding
 import com.titanio.app.databinding.FragmentTimelineDetailBinding
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 
 class TimeLineDetailFragment : Fragment() {
 
@@ -36,7 +36,7 @@ class TimeLineDetailFragment : Fragment() {
     }
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
         mBinding.imgBack.setOnClickListener(View.OnClickListener {
             navController.navigateUp()

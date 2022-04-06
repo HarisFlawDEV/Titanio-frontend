@@ -11,6 +11,7 @@ import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentFriendsInGroupBinding
 import com.titanio.app.databinding.FragmentProfileCompletedBinding
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.HomeActivity
 
 class ProfileCompletedFragment : Fragment() {
@@ -38,7 +39,7 @@ class ProfileCompletedFragment : Fragment() {
     fun initUI() {
 
         mBinding.btnGoToHome.setOnClickListener(View.OnClickListener {
-            startActivity(Intent( requireActivity(), HomeActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
+            startActivity(Intent( requireActivity(), DrawerActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
             requireActivity().finish()
         })
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/groupIV"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:src="@drawable/ic_drawer_brands"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="#000"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/groupHeaderTitles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dummy Header"
+        android:textSize="@dimen/_12sdp" />
+
+</LinearLayout>

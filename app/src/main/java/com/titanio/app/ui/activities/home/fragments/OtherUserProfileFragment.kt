@@ -10,6 +10,7 @@ import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentOtherUserProfileBinding
 import com.titanio.app.databinding.FragmentSearchBinding
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.HomeActivity
 
 class OtherUserProfileFragment : Fragment() {
@@ -36,7 +37,7 @@ class OtherUserProfileFragment : Fragment() {
     }
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
         mBinding.imgBack.setOnClickListener(View.OnClickListener {
             navController.navigateUp()

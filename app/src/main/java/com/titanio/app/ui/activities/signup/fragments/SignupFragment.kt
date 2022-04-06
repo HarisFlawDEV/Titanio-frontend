@@ -47,7 +47,7 @@ class SignupFragment : Fragment() {
 
         mBinding.btnSignupScreen.setOnClickListener(View.OnClickListener {
 
-            navController.navigate(R.id.navigation_app_setup)
+            navController.navigate(R.id.navigation_app_otp)
         })
 
     }

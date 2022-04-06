@@ -9,7 +9,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentTimeLineBinding
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 
 class TimeLineFragments : Fragment() {
 
@@ -36,7 +36,7 @@ class TimeLineFragments : Fragment() {
     }
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
         mBinding.imgNotification.setOnClickListener(View.OnClickListener {
             navController.navigate(R.id.navigation_notification)

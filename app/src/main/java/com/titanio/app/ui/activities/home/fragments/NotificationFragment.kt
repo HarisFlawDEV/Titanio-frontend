@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentNotificationBinding
 import com.titanio.app.databinding.FragmentOtherUserProfileBinding
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 
 class NotificationFragment : Fragment() {
 
@@ -36,7 +36,7 @@ class NotificationFragment : Fragment() {
     }
 
     fun initUI() {
-        (activity as HomeActivity?)?.hidebottomBar()
+        (activity as DrawerActivity?)?.hidebottomBar()
 
         mBinding.llParentOne.setOnClickListener(View.OnClickListener {
 
@@ -45,11 +45,10 @@ class NotificationFragment : Fragment() {
             navController.navigate(R.id.navigation_found_item_owner, bundle)
         })
         mBinding.llParentThree.setOnClickListener(View.OnClickListener {
-//            val bundle = Bundle()
-//            bundle.putBoolean("item_found_by", false)
-//            navController.navigate(R.id.navigation_found_item_owner, bundle)
+            val bundle = Bundle()
+            bundle.putBoolean("item_found_by", false)
+            navController.navigate(R.id.navigation_found_item_owner, bundle)
 
-            navController.navigate(R.id.navigation_time_line)
         })
     }
 }
