@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/llContactsGroup1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitleGiftFriend"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivFriendImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/img_friend_1"/>
+
+
+    <TextView
+        android:id="@+id/tvFriendName"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Abdullah"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvSendInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingHorizontal="20dp"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/btn_invite_black"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

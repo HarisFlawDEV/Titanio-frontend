@@ -14,10 +14,10 @@ import com.titanio.app.R
 import com.titanio.app.model.InviteFriendsModel
 import java.util.ArrayList
 
-class InviteFriendsAdapter(
+class AddMoreFriendsAdapter(
     private val context: Context,
     private val inviteFriendsList: ArrayList<InviteFriendsModel>,
-) : RecyclerView.Adapter<InviteFriendsAdapter.MyViewHolder>() {
+) : RecyclerView.Adapter<AddMoreFriendsAdapter.MyViewHolder>() {
 
     private var myInterface: MyInterface? = null
 
@@ -46,7 +46,7 @@ class InviteFriendsAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val v = LayoutInflater.from(parent.context)
-            .inflate(R.layout.row_invite_friends, parent, false)
+            .inflate(R.layout.row_add_more_friends, parent, false)
         return MyViewHolder(v)
     }
 
@@ -66,7 +66,7 @@ class InviteFriendsAdapter(
 
         if (currentItem.isInviteSent) {
             holder.tvSendInvite.setBackgroundResource(R.color.white)
-            holder.tvSendInvite.setText("Invited")
+            holder.tvSendInvite.setText("Request Send")
             holder.tvSendInvite.setTextColor(Color.parseColor("#909090"))
         }
 

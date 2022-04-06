@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.titanio.app.R
 import com.titanio.app.databinding.FragmentOurBrandsBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
 
@@ -36,6 +37,9 @@ class OurBrandsFragment : Fragment() {
 
     fun initUI() {
         (activity as DrawerActivity?)?.hidebottomBar()
+        mBinding.imgNotification.setOnClickListener(View.OnClickListener {
 
+            navController.navigate(R.id.nav_notifications)
+        })
     }
 }
