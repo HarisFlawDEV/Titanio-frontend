@@ -9,7 +9,6 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.databinding.FragmentEditProfileBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 
 class EditProfileFragment : Fragment() {
     var navController: NavController? = null

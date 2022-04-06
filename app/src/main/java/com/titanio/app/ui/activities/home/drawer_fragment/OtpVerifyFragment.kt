@@ -8,9 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.databinding.FragmentOtpVerificationBinding
-import com.titanio.app.databinding.FragmentOurBrandsBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 
 class OtpVerifyFragment : Fragment() {
 

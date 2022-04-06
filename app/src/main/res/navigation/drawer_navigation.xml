@@ -217,4 +217,12 @@
             android:id="@+id/action_navigation_add_post_to_nav_my_profile"
             app:destination="@id/nav_my_profile" />
     </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_invite_friends"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.InviteFriendsFragment"
+        android:label="@string/title_invite_friends"
+        tools:layout="@layout/fragment_invite_friends">
+    </fragment>
 </navigation>

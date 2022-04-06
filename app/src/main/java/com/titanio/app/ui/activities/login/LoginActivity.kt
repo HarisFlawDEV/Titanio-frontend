@@ -7,7 +7,6 @@ import android.view.View
 import android.view.WindowManager
 import com.titanio.app.databinding.ActivityLoginBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 import com.titanio.app.ui.activities.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity() {

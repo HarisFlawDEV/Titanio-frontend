@@ -147,6 +147,9 @@ class ChatFragment : Fragment(), ChatAdapter.IChatOnClick {
         mBinding.imgNotification.setOnClickListener(View.OnClickListener {
             navController?.navigate(R.id.nav_notifications)
         })
+        mBinding.imgHamburger.setOnClickListener(View.OnClickListener {
+            (activity as DrawerActivity?)?.openDrawer()
+        })
     }
 
     override fun chatOnClick() {

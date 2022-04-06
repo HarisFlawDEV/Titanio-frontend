@@ -1,6 +1,5 @@
 package com.titanio.app.ui.activities.postdetailvideo
 
-import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -9,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import com.titanio.app.R
 import com.titanio.app.databinding.ActivityPostDetailVideoBinding
-import com.titanio.app.ui.activities.home.HomeActivity
 
 
 class PostDetailVideoActivity : AppCompatActivity() {

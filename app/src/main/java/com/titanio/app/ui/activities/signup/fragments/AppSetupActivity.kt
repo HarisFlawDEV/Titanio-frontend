@@ -10,7 +10,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentAppSetupBinding
-import com.titanio.app.ui.activities.home.HomeActivity
+import com.titanio.app.ui.activities.home.DrawerActivity
 
 class AppSetupActivity : Fragment() {
 
@@ -40,7 +40,7 @@ class AppSetupActivity : Fragment() {
             startActivity(
                 Intent(
                     activity,
-                    HomeActivity::class.java
+                    DrawerActivity::class.java
                 ).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             )
             activity?.finish()

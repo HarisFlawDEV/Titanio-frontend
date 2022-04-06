@@ -1,6 +1,7 @@
 package com.titanio.app.ui.activities.home.fragments
 
 import android.os.Bundle
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,6 @@ import com.titanio.app.R
 import com.titanio.app.databinding.FragmentHomeBinding
 import com.titanio.app.model.HomeModel
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 import com.titanio.app.ui.activities.home.adapters.HomeAdapter
 
 class HomeFragment : Fragment(), HomeAdapter.IPostClick {
@@ -97,6 +97,10 @@ class HomeFragment : Fragment(), HomeAdapter.IPostClick {
 
         mBinding.imgNotification.setOnClickListener(View.OnClickListener {
             navController.navigate(R.id.nav_notifications)
+        })
+
+        mBinding.imgHamburger.setOnClickListener(View.OnClickListener {
+            (activity as DrawerActivity?)?.openDrawer()
         })
     }
 

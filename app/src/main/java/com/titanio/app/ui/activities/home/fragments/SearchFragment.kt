@@ -1,6 +1,5 @@
 package com.titanio.app.ui.activities.home.fragments
 
-import android.app.Activity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,6 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.databinding.FragmentSearchBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 
 class SearchFragment : Fragment() {
 

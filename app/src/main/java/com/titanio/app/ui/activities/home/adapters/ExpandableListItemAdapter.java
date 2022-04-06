@@ -89,10 +89,28 @@ public class ExpandableListItemAdapter extends BaseExpandableListAdapter {
             convertView = layoutInflater.inflate(R.layout.list_item_group, null);
         }
 
+
+
         TextView header = convertView.findViewById(R.id.groupHeaderTitles);
         ImageView groupIV = convertView.findViewById(R.id.groupIV);
         header.setText(headerTitles);
         groupIV.setImageDrawable(headerImg);
+        ImageView ivExpand = convertView.findViewById(R.id.ivExpand);
+
+        if (groupPosition == 3){
+            ivExpand.setVisibility(View.VISIBLE);
+        }
+        else {
+            ivExpand.setVisibility(View.GONE);
+        }
+
+        if(isExpanded){
+            ivExpand.setImageResource(R.drawable.ic_collapse_menus);
+        }
+        else {
+            ivExpand.setImageResource(R.drawable.ic_expands_menus);
+        }
+
 
         return convertView;
     }

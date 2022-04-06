@@ -10,7 +10,6 @@ import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentChatUserBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 
 class ChatUserFragment : Fragment() {
 

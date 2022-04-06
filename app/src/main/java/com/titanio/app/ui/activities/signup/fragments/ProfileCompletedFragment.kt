@@ -8,11 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.titanio.app.R
-import com.titanio.app.databinding.FragmentFriendsInGroupBinding
 import com.titanio.app.databinding.FragmentProfileCompletedBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.HomeActivity
 
 class ProfileCompletedFragment : Fragment() {
 

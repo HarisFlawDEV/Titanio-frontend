@@ -17,11 +17,21 @@
         android:paddingTop="@dimen/_10sdp"
         android:paddingBottom="@dimen/_10sdp"
         android:textColor="#000"
+        android:layout_weight="1"
         android:fontFamily="@font/poppins_regular"
         android:id="@+id/groupHeaderTitles"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Dummy Header"
         android:textSize="@dimen/_12sdp" />
+
+    <ImageView
+        android:id="@+id/ivExpand"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:src="@drawable/ic_expands_menus"
+        android:layout_gravity="end|center"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

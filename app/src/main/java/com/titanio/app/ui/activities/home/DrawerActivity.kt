@@ -8,6 +8,7 @@ import android.view.Menu
 import android.view.View
 import android.view.WindowManager
 import android.widget.ExpandableListView.*
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -196,7 +197,12 @@ class DrawerActivity : AppCompatActivity() {
             mBinding.appBarDrawer.includeHome.imgProfile.setImageResource(R.drawable.ic_menu_profile)
             mNavController.navigate(R.id.navigation_add_post)
         })
+        val parentView: View = mBinding.navView.getHeaderView(0)
+        val ivClose = parentView.findViewById<View>(R.id.ivClose) as ImageView
 
+        ivClose.setOnClickListener(View.OnClickListener {
+            mBinding.drawerLayout?.closeDrawer(Gravity.LEFT)
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -218,6 +224,10 @@ class DrawerActivity : AppCompatActivity() {
 
     fun showBottmBar() {
         mBinding.appBarDrawer.includeHome.rrBottomBar.visibility = View.VISIBLE
+    }
+
+    fun openDrawer(){
+        mBinding.drawerLayout.openDrawer(Gravity.LEFT)
     }
 
 
