@@ -8,12 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
-import com.titanio.app.databinding.FragmentMyLuggageBinding
+import com.titanio.app.databinding.FragmentAddSuitCaseDetailBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
 
-class MyLuggageFragment : Fragment() {
+class AddSuitcaseDetailsFragment : Fragment() {
 
-    private lateinit var mBinding: FragmentMyLuggageBinding
+
+    private lateinit var mBinding: FragmentAddSuitCaseDetailBinding
     private lateinit var navController: NavController
 
 
@@ -22,7 +23,7 @@ class MyLuggageFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentMyLuggageBinding.inflate(inflater, container, false)
+        mBinding = FragmentAddSuitCaseDetailBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
@@ -37,24 +38,21 @@ class MyLuggageFragment : Fragment() {
     fun initUI() {
         (activity as DrawerActivity?)?.hidebottomBar()
 
+
+        mBinding.btnConfirmDetail.setOnClickListener(View.OnClickListener {
+//            navController.navigate(R.id.navigation_suit_case_added)
+        })
+        mBinding.btnScanAgain.setOnClickListener(View.OnClickListener {
+            navController.navigate(R.id.nav_add_new_suitcase_luggage)
+        })
+
         mBinding.imgHamburger.setOnClickListener(View.OnClickListener {
             (activity as DrawerActivity?)?.openDrawer()
+
         })
         mBinding.imgNotification.setOnClickListener(View.OnClickListener {
             navController.navigate(R.id.nav_notifications)
-        })
 
-        mBinding.tvActiveThree.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.nav_subscription)
-        })
-        mBinding.llClaimOne.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_claim_warranty_qrcode_scan)
-        })
-        mBinding.llClaimTwo.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_claim_warranty_qrcode_scan)
-        })
-        mBinding.btnAddNewSuitcase.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.nav_add_new_suitcase_luggage)
         })
     }
 }

@@ -59,7 +59,6 @@
                     android:layout_marginStart="@dimen/_18sdp"
                     android:layout_marginTop="@dimen/_22sdp"
                     android:layout_marginEnd="@dimen/_18sdp"
-                    android:layout_marginBottom="@dimen/_20sdp"
                     android:orientation="vertical"
                     android:paddingBottom="@dimen/_22sdp">
 
@@ -280,6 +279,8 @@
                         android:layout_marginStart="2dp"
                         android:layout_marginTop="@dimen/_17sdp"
                         android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+
                         android:background="@drawable/drawable_signup_btn"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="Send Claim"

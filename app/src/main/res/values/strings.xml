@@ -95,5 +95,7 @@
     <string name="title_my_pickup">My Pickups</string>
     <string name="title_claim_warranty_qr_code_scan">Claim Warranty Qr Code Scan</string>
     <string name="title_claim_warranty">Claim Warranty</string>
+    <string name="title_add_new_suitcaes_luggage">Add New Suitcase Luggage</string>
+    <string name="title_nav_add_new_suitcase_detail">Add New Suitcase Detail</string>
 
 </resources>

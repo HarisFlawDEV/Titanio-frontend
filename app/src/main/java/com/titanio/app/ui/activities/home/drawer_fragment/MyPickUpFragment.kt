@@ -1,5 +1,7 @@
 package com.titanio.app.ui.activities.home.drawer_fragment
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -19,9 +21,9 @@ class MyPickUpFragment : Fragment() {
 
     private lateinit var mBinding: FragmentMyPickupBinding
     private lateinit var navController: NavController
-    private lateinit var startPickupBtn : AppCompatButton
-    private lateinit var viewLocationBtn : AppCompatButton
-    private lateinit var cancelBtn : AppCompatButton
+    private lateinit var startPickupBtn: AppCompatButton
+    private lateinit var viewLocationBtn: AppCompatButton
+    private lateinit var cancelBtn: AppCompatButton
 
 
     override fun onCreateView(
@@ -69,18 +71,17 @@ class MyPickUpFragment : Fragment() {
             .setView(dialogView)
 
             .show()
+        customDialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         val btnNo = dialogView.findViewById<AppCompatButton>(R.id.btn_no)
         val btnYes = dialogView.findViewById<AppCompatButton>(R.id.btn_yes)
         btnNo.setOnClickListener {
             customDialog.dismiss()
-            navController.navigateUp()
-            navController.navigateUp()
+
         }
         btnYes.setOnClickListener {
             customDialog.dismiss()
-            navController.navigateUp()
-            navController.navigateUp()
+
         }
     }
 }

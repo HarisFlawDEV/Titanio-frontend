@@ -1,5 +1,7 @@
 package com.titanio.app.ui.activities.home.drawer_fragment
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -55,6 +57,7 @@ class ClaimWarrantyFragment : Fragment() {
             .setView(dialogView)
 
             .show()
+        customDialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         val btnOk = dialogView.findViewById<AppCompatButton>(R.id.btnOk)
         btnOk.setOnClickListener {

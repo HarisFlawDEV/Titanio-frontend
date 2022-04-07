@@ -72,47 +72,51 @@
                             android:fontFamily="@font/poppins_medium"
                             android:text="John Doe Send Request\nFor Pickup"
                             android:textColor="#252525"
-                            android:textSize="@dimen/_8sdp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_medium"
-                            android:text="Pickup Location: "
-                            android:textColor="#252525"
-                            android:textSize="@dimen/_6sdp" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_light"
-                            android:text="DXB"
-                            android:textColor="#252525"
-                            android:textSize="@dimen/_6sdp" />
-
-                    </LinearLayout>
+                            android:textSize="@dimen/_9sdp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Pickup Location: "
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="DXB"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Flight Arrived: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="05-03-22 - 05:00 PM"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -122,6 +126,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -133,7 +138,7 @@
                             android:text="Accept"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/btn_reject"
@@ -145,7 +150,7 @@
                             android:text="Reject"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
 
                 </RelativeLayout>
@@ -168,26 +173,28 @@
                             android:fontFamily="@font/poppins_medium"
                             android:text="John Doe Send Request\nFor Pickup"
                             android:textColor="#252525"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Pickup Location: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="DXB"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -195,20 +202,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Flight Arrived: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="05-03-22 - 05:00 PM"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -218,6 +227,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -228,7 +239,7 @@
                             android:text="Accept"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="@dimen/_55sdp"
@@ -239,7 +250,7 @@
                             android:text="Reject"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
 
                 </RelativeLayout>
@@ -262,26 +273,28 @@
                             android:fontFamily="@font/poppins_medium"
                             android:text="John Doe Send Request\nFor Pickup"
                             android:textColor="#252525"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Pickup Location: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="DXB"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -289,20 +302,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Flight Arrived: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="05-03-22 - 05:00 PM"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -312,6 +327,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -322,7 +339,7 @@
                             android:text="Accept"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="@dimen/_55sdp"
@@ -333,7 +350,7 @@
                             android:text="Reject"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
 
                 </RelativeLayout>
@@ -356,26 +373,28 @@
                             android:fontFamily="@font/poppins_medium"
                             android:text="John Doe Send Request\nFor Pickup"
                             android:textColor="#252525"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Pickup Location: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="DXB"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -383,20 +402,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Flight Arrived: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="05-03-22 - 05:00 PM"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -406,6 +427,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -416,7 +439,7 @@
                             android:text="Accept"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="@dimen/_55sdp"
@@ -427,7 +450,7 @@
                             android:text="Reject"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
 
                 </RelativeLayout>
@@ -450,26 +473,28 @@
                             android:fontFamily="@font/poppins_medium"
                             android:text="John Doe Send Request\nFor Pickup"
                             android:textColor="#252525"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Pickup Location: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="DXB"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -477,20 +502,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Flight Arrived: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="05-03-22 - 05:00 PM"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -500,6 +527,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -510,7 +539,7 @@
                             android:text="Accept"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="@dimen/_55sdp"
@@ -521,7 +550,7 @@
                             android:text="Reject"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
 
                 </RelativeLayout>
@@ -544,26 +573,28 @@
                             android:fontFamily="@font/poppins_medium"
                             android:text="John Doe Send Request\nFor Pickup"
                             android:textColor="#252525"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Pickup Location: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="DXB"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -571,20 +602,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Flight Arrived: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="05-03-22 - 05:00 PM"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -594,6 +627,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -604,7 +639,7 @@
                             android:text="Accept"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="@dimen/_55sdp"
@@ -615,7 +650,7 @@
                             android:text="Reject"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
 
                 </RelativeLayout>
@@ -638,26 +673,28 @@
                             android:fontFamily="@font/poppins_medium"
                             android:text="John Doe Send Request\nFor Pickup"
                             android:textColor="#252525"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Pickup Location: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="DXB"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -665,20 +702,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_medium"
                                 android:text="Flight Arrived: "
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/poppins_light"
                                 android:text="05-03-22 - 05:00 PM"
                                 android:textColor="#252525"
-                                android:textSize="@dimen/_6sdp" />
+                                android:textSize="@dimen/_7sdp" />
 
                         </LinearLayout>
 
@@ -688,6 +727,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -698,7 +739,7 @@
                             android:text="Accept"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="@dimen/_55sdp"
@@ -709,12 +750,10 @@
                             android:text="Reject"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_8sdp" />
+                            android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
 
                 </RelativeLayout>
-
-
 
 
             </LinearLayout>
