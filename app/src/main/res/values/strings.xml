@@ -89,5 +89,6 @@
     <string name="title_group_detail">Group Detail</string>
     <string name="title_group_edit">Edit Group</string>
     <string name="title_add_more_friends">Add More Friends</string>
-
+    <string name="title_my_luggage">My Luggage</string>
+    <string name="claim_warranty"><u>Claim Warranty</u></string>
 </resources>
