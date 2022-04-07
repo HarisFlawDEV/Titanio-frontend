@@ -9,11 +9,12 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentMyLuggageBinding
+import com.titanio.app.databinding.FragmntClaimWarrantyScanQrCodeBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
 
-class MyLuggageFragment : Fragment() {
+class ClaimWarrantyScanQrCode : Fragment() {
 
-    private lateinit var mBinding: FragmentMyLuggageBinding
+    private lateinit var mBinding: FragmntClaimWarrantyScanQrCodeBinding
     private lateinit var navController: NavController
 
 
@@ -22,7 +23,7 @@ class MyLuggageFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentMyLuggageBinding.inflate(inflater, container, false)
+        mBinding = FragmntClaimWarrantyScanQrCodeBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
@@ -37,21 +38,15 @@ class MyLuggageFragment : Fragment() {
     fun initUI() {
         (activity as DrawerActivity?)?.hidebottomBar()
 
-        mBinding.imgHamburger.setOnClickListener(View.OnClickListener {
-            (activity as DrawerActivity?)?.openDrawer()
-        })
-        mBinding.imgNotification.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.nav_notifications)
-        })
+        mBinding.imgBack.setOnClickListener(View.OnClickListener {
 
-        mBinding.tvActiveThree.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.nav_subscription)
+            navController.navigateUp()
+
         })
-        mBinding.llClaimOne.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_claim_warranty_qrcode_scan)
-        })
-        mBinding.llClaimTwo.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_claim_warranty_qrcode_scan)
+        mBinding.imgClaimScanQrCode.setOnClickListener(View.OnClickListener {
+
+            navController.navigate(R.id.navigation_claim_warranty)
+
         })
     }
 }

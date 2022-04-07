@@ -69,8 +69,32 @@
         <action
             android:id="@+id/action_nav_my_luggage_to_nav_notifications"
             app:destination="@id/nav_notifications" />
+        <action
+            android:id="@+id/action_nav_my_luggage_to_nav_subscription"
+            app:destination="@id/nav_subscription" />
+        <action
+            android:id="@+id/action_nav_my_luggage_to_navigation_claim_warranty_qrcode_scan"
+            app:destination="@id/navigation_claim_warranty_qrcode_scan" />
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_claim_warranty_qrcode_scan"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.ClaimWarrantyScanQrCode"
+        android:label="@string/title_claim_warranty_qr_code_scan"
+        tools:layout="@layout/fragmnt_claim_warranty_scan_qr_code">
+
+        <action
+            android:id="@+id/action_navigation_claim_warranty_qrcode_scan_to_navigation_claim_warranty"
+            app:destination="@id/navigation_claim_warranty" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_claim_warranty"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.ClaimWarrantyFragment"
+        android:label="@string/title_claim_warranty"
+        tools:layout="@layout/fragment_claim_warranty">
+
+
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_other_user_profile"

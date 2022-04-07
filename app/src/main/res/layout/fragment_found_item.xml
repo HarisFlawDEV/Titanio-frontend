@@ -255,7 +255,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:background="@drawable/round_corner_edit_text"
+                        android:background="@drawable/drawable_corner_mesage"
                         android:gravity="top"
                         android:hint="Message here"
                         android:inputType="text"
