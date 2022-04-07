@@ -91,6 +91,8 @@
     <string name="title_add_more_friends">Add More Friends</string>
     <string name="title_my_luggage">My Luggage</string>
     <string name="claim_warranty"><u>Claim Warranty</u></string>
+    <string name="title_pickup_request">Pick Up Request</string>
+    <string name="title_my_pickup">My Pickups</string>
     <string name="title_claim_warranty_qr_code_scan">Claim Warranty Qr Code Scan</string>
     <string name="title_claim_warranty">Claim Warranty</string>
 

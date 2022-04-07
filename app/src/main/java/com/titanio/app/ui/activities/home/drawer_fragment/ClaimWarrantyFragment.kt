@@ -1,12 +1,9 @@
 package com.titanio.app.ui.activities.home.drawer_fragment
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
@@ -52,7 +49,7 @@ class ClaimWarrantyFragment : Fragment() {
     }
 
     private fun showSendClaimAlert() {
-        val dialogView = layoutInflater.inflate(R.layout.dialog_calim_recieved, null)
+        val dialogView = layoutInflater.inflate(R.layout.dialog_claim_received, null)
         val customDialog = AlertDialog.Builder(requireActivity(), R.style.WrapContentDialog)
             .setCancelable(false)
             .setView(dialogView)
