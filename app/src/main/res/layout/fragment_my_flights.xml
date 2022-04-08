@@ -24,7 +24,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="My Pickups"
+            android:text="My Flights"
             android:textColor="@color/white"
             android:textSize="@dimen/_14sdp" />
 

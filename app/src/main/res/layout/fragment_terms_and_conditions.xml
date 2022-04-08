@@ -6,7 +6,6 @@
     android:backgroundTint="@color/grey">
 
 
-
     <RelativeLayout
         android:id="@+id/rr_header"
         android:layout_width="match_parent"
@@ -46,24 +45,30 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
             android:fillViewport="true">
 
             <LinearLayout
-                android:layout_marginEnd="@dimen/_20sdp"
-                android:layout_marginStart="@dimen/_20sdp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_25sdp"
+
                 android:orientation="vertical">
 
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_11sdp"
-                    android:text="@string/text_privacy_policy"
-                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/text_privacy_policy"
+                    android:textColor="@color/black"
+                    android:paddingBottom="@dimen/_10sdp"
+
+                    android:textSize="@dimen/_11sdp" />
             </LinearLayout>
         </ScrollView>
 
