@@ -44,7 +44,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_subscription">Subscription</string>
-    <string name="menu_my_groups">My groups</string>
+    <string name="menu_my_groups">My Groups</string>
     <string name="menu_flight_tracker_pickup"><![CDATA[Flight Tracker & Pickup]]></string>
     <string name="menu_pickup_requests">Pickup Requests</string>
     <string name="menu_my_pickups">My Pickups</string>
@@ -83,6 +83,19 @@
     <string name="title_found_item">Found Item</string>
     <string name="title_my_group">My Group</string>
     <string name="title_invite_friends">Invite Friends</string>
-    <string name="title_my_friends">My Friends</string>
+    <string name="title_new_group">Add New Group</string>
+    <string name="add_more"><u>Add More</u></string>
+    <string name="select_all"><u>Select All</u></string>
+    <string name="title_group_detail">Group Detail</string>
+    <string name="title_group_edit">Edit Group</string>
+    <string name="title_add_more_friends">Add More Friends</string>
+    <string name="title_my_luggage">My Luggage</string>
+    <string name="claim_warranty"><u>Claim Warranty</u></string>
+    <string name="title_pickup_request">Pick Up Request</string>
+    <string name="title_my_pickup">My Pickups</string>
+    <string name="title_claim_warranty_qr_code_scan">Claim Warranty Qr Code Scan</string>
+    <string name="title_claim_warranty">Claim Warranty</string>
+    <string name="title_add_new_suitcaes_luggage">Add New Suitcase Luggage</string>
+    <string name="title_nav_add_new_suitcase_detail">Add New Suitcase Detail</string>
 
 </resources>

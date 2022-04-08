@@ -7,14 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.titanio.app.R
-import com.titanio.app.databinding.FragmentLuggageFoundBinding
-import com.titanio.app.databinding.FragmentMyGroupsBinding
+import com.titanio.app.databinding.FragmentAddNewGroupBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
 
-class MyGroupsFragment : Fragment() {
+class AddNewGroupFragment : Fragment() {
 
-    private lateinit var mBinding: FragmentMyGroupsBinding
+
+    private lateinit var mBinding: FragmentAddNewGroupBinding
     private lateinit var navController: NavController
 
 
@@ -23,7 +22,7 @@ class MyGroupsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentMyGroupsBinding.inflate(inflater, container, false)
+        mBinding = FragmentAddNewGroupBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
@@ -37,15 +36,9 @@ class MyGroupsFragment : Fragment() {
 
     fun initUI() {
         (activity as DrawerActivity?)?.hidebottomBar()
-
         mBinding.btnAddNewGroup.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_add_new_group)
-        })
-        mBinding.imgBack.setOnClickListener(View.OnClickListener {
+
             navController.navigateUp()
-        })
-        mBinding.llItemClick.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_group_detail)
         })
     }
 }

@@ -48,262 +48,285 @@
         android:background="@drawable/drawbale_cardview_corner"
         android:orientation="vertical">
 
-        <ScrollView
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:layout_height="match_parent">
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_14sdp"
-                    android:layout_marginTop="@dimen/_22sdp"
-                    android:layout_marginEnd="@dimen/_14sdp"
-                    android:layout_marginBottom="@dimen/_18sdp"
+
                     android:orientation="vertical">
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:weightSum="1.0">
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_18sdp"
+                        android:orientation="vertical">
+
 
                         <LinearLayout
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
                             android:gravity="center"
-                            android:orientation="vertical">
+                            android:weightSum="1.0">
 
-                            <ImageView
-                                android:layout_width="match_parent"
+                            <LinearLayout
+                                android:id="@+id/ll_item_click"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_one" />
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_one" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="My Groups"
+
+
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="My Groups"
+                                android:layout_marginStart="@dimen/_11sdp"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
 
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_two" />
 
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Friends"
+
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:weightSum="1.0">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_three" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Family"
+
+
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_11sdp"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_four" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Social Friends"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+                        </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_11sdp"
-                            android:layout_weight="0.5"
+                            android:layout_marginTop="@dimen/_10sdp"
                             android:gravity="center"
-                            android:orientation="vertical">
+                            android:weightSum="1.0">
 
-                            <ImageView
-                                android:layout_width="match_parent"
+                            <LinearLayout
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_two" />
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_two" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Friends"
+
+
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Friends"
+                                android:layout_marginStart="@dimen/_11sdp"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
 
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_one" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Business Travel"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:weightSum="1.0">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_three" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Family"
+
+
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_11sdp"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_group_four" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Social Friends"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:gravity="center"
-                        android:weightSum="1.0">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_three" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Family"
-
-
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_11sdp"
-                            android:layout_weight="0.5"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_four" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Social Friends"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:gravity="center"
-                        android:weightSum="1.0">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_two" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Friends"
-
-
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_11sdp"
-                            android:layout_weight="0.5"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_one" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Business Travel"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:gravity="center"
-                        android:weightSum="1.0">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_three" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Family"
-
-
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_11sdp"
-                            android:layout_weight="0.5"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/ic_group_four" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Social Friends"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/_11sdp" />
-                        </LinearLayout>
-                    </LinearLayout>
                 </LinearLayout>
+            </ScrollView>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_new_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@drawable/drawable_signup_btn"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Add New group"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
-            </LinearLayout>
-        </ScrollView>
+        </FrameLayout>
 
     </LinearLayout>
 

@@ -52,14 +52,77 @@
         android:id="@+id/nav_my_groups"
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyGroupsFragment"
         android:label="@string/title_my_group"
-        tools:layout="@layout/fragment_my_groups" />
+        tools:layout="@layout/fragment_my_groups">
+        <action
+            android:id="@+id/action_nav_my_groups_to_navigation_add_new_group"
+            app:destination="@id/navigation_add_new_group" />
+        <action
+            android:id="@+id/action_nav_my_groups_to_navigation_group_detail"
+            app:destination="@id/navigation_group_detail" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_my_luggage"
-        android:name="com.titanio.app.ui.activities.signup.fragments.SubscriptionPlanFragment"
-        android:label="Subscription"
-        tools:layout="@layout/fragment_subscription_plan" />
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyLuggageFragment"
+        android:label="@string/title_my_luggage"
+        tools:layout="@layout/fragment_my_luggage">
+        <action
+            android:id="@+id/action_nav_my_luggage_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+        <action
+            android:id="@+id/action_nav_my_luggage_to_nav_subscription"
+            app:destination="@id/nav_subscription" />
+        <action
+            android:id="@+id/action_nav_my_luggage_to_navigation_claim_warranty_qrcode_scan"
+            app:destination="@id/navigation_claim_warranty_qrcode_scan" />
+        <action
+            android:id="@+id/action_nav_my_luggage_to_nav_add_new_suitcase_luggage"
+            app:destination="@id/nav_add_new_suitcase_luggage" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/nav_add_new_suitcase_luggage"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.AddNewSuitCaseFragment"
+        android:label="@string/title_add_new_suitcaes_luggage"
+        tools:layout="@layout/fragment_add_new_suitcaes_luggage">
+
+        <action
+            android:id="@+id/action_nav_add_new_suitcase_luggage_to_nav_add_new_suitcase_detail"
+            app:destination="@id/nav_add_new_suitcase_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_new_suitcase_detail"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.AddSuitcaseDetailsFragment"
+        android:label="@string/title_nav_add_new_suitcase_detail"
+        tools:layout="@layout/fragment_add_suit_case_detail">
+
+        <action
+            android:id="@+id/action_nav_add_new_suitcase_detail_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+        <action
+            android:id="@+id/action_nav_add_new_suitcase_detail_to_nav_add_new_suitcase_luggage"
+            app:destination="@id/nav_add_new_suitcase_luggage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_claim_warranty_qrcode_scan"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.ClaimWarrantyScanQrCode"
+        android:label="@string/title_claim_warranty_qr_code_scan"
+        tools:layout="@layout/fragmnt_claim_warranty_scan_qr_code">
+
+        <action
+            android:id="@+id/action_navigation_claim_warranty_qrcode_scan_to_navigation_claim_warranty"
+            app:destination="@id/navigation_claim_warranty" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_claim_warranty"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.ClaimWarrantyFragment"
+        android:label="@string/title_claim_warranty"
+        tools:layout="@layout/fragment_claim_warranty">
+
+
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_other_user_profile"
@@ -224,6 +287,79 @@
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.InviteFriendsFragment"
         android:label="@string/title_invite_friends"
         tools:layout="@layout/fragment_invite_friends">
+        <action
+            android:id="@+id/action_nav_invite_friends_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_our_brands"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.OurBrandsFragment"
+        android:label="@string/title_our_brands"
+        tools:layout="@layout/fragment_our_brands">
+        <action
+            android:id="@+id/action_nav_our_brands_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_add_new_group"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.AddNewGroupFragment"
+        android:label="@string/title_new_group"
+        tools:layout="@layout/fragment_add_new_group">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_group_detail"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.GroupDetailFragment"
+        android:label="@string/title_group_detail"
+        tools:layout="@layout/fragment_group_detail">
+
+
+        <action
+            android:id="@+id/action_navigation_group_detail_to_navigation_group_edit2"
+            app:destination="@id/navigation_group_edit" />
+        <action
+            android:id="@+id/action_navigation_group_detail_to_navigation_add_more_friends3"
+            app:destination="@id/navigation_add_more_friends" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_group_edit"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.EditGroupFragment"
+        android:label="@string/title_group_edit"
+        tools:layout="@layout/fragment_edit_group">
+
+
+        <action
+            android:id="@+id/action_navigation_group_edit_to_navigation_add_more_friends3"
+            app:destination="@id/navigation_add_more_friends" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_more_friends"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.AddMoreFreidnsFragement"
+        android:label="@string/title_add_more_friends"
+        tools:layout="@layout/fragment_add_more_friends">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pickup_requests"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.PickUpRequestFragment"
+        android:label="@string/title_pickup_request"
+        tools:layout="@layout/fragment_pickuprequest">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_my_pickups"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyPickUpFragment"
+        android:label="@string/title_my_pickup"
+        tools:layout="@layout/fragment_my_pickup">
+
     </fragment>
 
 

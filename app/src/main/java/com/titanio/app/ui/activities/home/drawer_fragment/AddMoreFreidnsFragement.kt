@@ -2,28 +2,28 @@ package com.titanio.app.ui.activities.home.drawer_fragment
 
 import android.graphics.Paint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.titanio.app.R
-import com.titanio.app.databinding.FragmentChatBinding
-import com.titanio.app.databinding.FragmentInviteFriendsBinding
+import com.titanio.app.databinding.FragmentAddMoreFriendsBinding
+
 import com.titanio.app.model.InviteFriendsModel
 import com.titanio.app.ui.activities.home.DrawerActivity
-import com.titanio.app.ui.activities.home.adapters.ChatAdapter
-import com.titanio.app.ui.activities.home.adapters.InviteFriendsAdapter
+import com.titanio.app.ui.activities.home.adapters.AddMoreFriendsAdapter
 
-class InviteFriendsFragment : Fragment(), InviteFriendsAdapter.MyInterface {
+class AddMoreFreidnsFragement : Fragment() ,AddMoreFriendsAdapter.MyInterface{
 
-    var navController: NavController? = null
 
-    lateinit var adapterInviteFriends: InviteFriendsAdapter
-    private lateinit var mBinding: FragmentInviteFriendsBinding
+    private lateinit var mBinding: FragmentAddMoreFriendsBinding
+    private lateinit var navController: NavController
+
+
+    lateinit var addMoreFriendsAdapter: AddMoreFriendsAdapter
     private lateinit var inviteFriendsList: ArrayList<InviteFriendsModel>
     var isAllSelected: Boolean = false
 
@@ -32,52 +32,37 @@ class InviteFriendsFragment : Fragment(), InviteFriendsAdapter.MyInterface {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentInviteFriendsBinding.inflate(inflater, container, false)
+        mBinding = FragmentAddMoreFriendsBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         navController = Navigation.findNavController(view)
 
         initUI()
 
-
     }
-
 
     fun initUI() {
         (activity as DrawerActivity?)?.hidebottomBar()
 
-        mBinding.tvSelectAll.setPaintFlags(mBinding.tvSelectAll.getPaintFlags() or Paint.UNDERLINE_TEXT_FLAG)
+
 
         inviteFriendsList = ArrayList()
         prepareDataInviteFriends()
-        mBinding.rvInviteFriends.layoutManager = LinearLayoutManager(requireContext())
-        adapterInviteFriends = InviteFriendsAdapter(requireContext(), inviteFriendsList)
-        adapterInviteFriends.setClickListener(this)
-        mBinding.rvInviteFriends.adapter = adapterInviteFriends
+        mBinding.rvFriends.layoutManager = LinearLayoutManager(requireContext())
+        addMoreFriendsAdapter = AddMoreFriendsAdapter(requireContext(), inviteFriendsList)
+        addMoreFriendsAdapter.setClickListener(this)
+        mBinding.rvFriends.adapter = addMoreFriendsAdapter
 
-        mBinding.imgNotification.setOnClickListener(View.OnClickListener {
-            navController?.navigate(R.id.nav_notifications)
-        })
-        mBinding.imgHamburger.setOnClickListener(View.OnClickListener {
-            (activity as DrawerActivity?)?.openDrawer()
+
+        mBinding.imgBack.setOnClickListener(View.OnClickListener {
+            navController.navigateUp()
         })
 
-        mBinding.llSelectAll.setOnClickListener(View.OnClickListener {
-            if(!isAllSelected) {
-                mBinding.ivCheckbox.setImageResource(R.drawable.ic_checkbox_selected)
-                isAllSelected = true
-            }
-            else {
-                mBinding.ivCheckbox.setImageResource(R.drawable.ic_checkbox_unselect)
-                isAllSelected = false
-            }
-        })
+
     }
-
     private fun prepareDataInviteFriends() {
         var inviteFriendsModel = InviteFriendsModel("Dale Houston", R.drawable.img_friend_1, false)
         inviteFriendsList.add(inviteFriendsModel)
@@ -111,6 +96,6 @@ class InviteFriendsFragment : Fragment(), InviteFriendsAdapter.MyInterface {
             inviteFriendsList[position].isInviteSent = true
         }
 
-        adapterInviteFriends.notifyDataSetChanged()
+        addMoreFriendsAdapter.notifyDataSetChanged()
     }
 }

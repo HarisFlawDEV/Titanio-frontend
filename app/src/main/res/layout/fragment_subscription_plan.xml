@@ -38,8 +38,7 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/tv_subscription_plan"
             android:layout_marginTop="@dimen/_18sdp"
-            android:background="@drawable/drawbale_cardview_corner"
-            >
+            android:background="@drawable/drawbale_cardview_corner">
 
 
             <LinearLayout
@@ -428,32 +427,40 @@
                 </RelativeLayout>
 
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_weight="1"
                     android:gravity="center"
+
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_skip"
-                        android:layout_width="@dimen/_130sdp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:layout_weight="0.5"
                         android:background="@drawable/drawable_scan_again"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="Skip"
+
                         android:textAllCaps="false"
                         android:textColor="@color/white" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_pay"
-                        android:layout_width="@dimen/_130sdp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_marginTop="@dimen/_11sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
                         android:layout_toRightOf="@id/btn_skip"
+                        android:layout_weight="0.5"
+
                         android:background="@drawable/drawable_signup_btn"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="Pay"
@@ -461,15 +468,13 @@
                         android:textColor="@color/white" />
 
 
-                </RelativeLayout>
+                </LinearLayout>
 
 
             </LinearLayout>
 
 
         </LinearLayout>
-
-
 
 
     </RelativeLayout>

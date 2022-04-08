@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/grey">
-
+  >
 
 
     <RelativeLayout
@@ -28,7 +27,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Luggage found"
+            android:text="Scan QR Code"
             android:textColor="@color/white"
             android:textSize="@dimen/_14sdp" />
 
@@ -68,7 +67,7 @@
                         android:layout_gravity="center_horizontal"
                         android:fontFamily="@font/poppins_semibold"
                         android:gravity="center_horizontal"
-                        android:text="Found item?"
+                        android:text="Claim Warranty"
                         android:textColor="@color/red_main"
                         android:textSize="@dimen/_21sdp" />
 
@@ -85,7 +84,7 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/img_scan_qr_code"
+                    android:id="@+id/img_claim_scan_qr_code"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
