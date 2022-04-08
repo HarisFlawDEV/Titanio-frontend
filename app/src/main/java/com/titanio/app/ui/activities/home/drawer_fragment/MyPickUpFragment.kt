@@ -21,9 +21,6 @@ class MyPickUpFragment : Fragment() {
 
     private lateinit var mBinding: FragmentMyPickupBinding
     private lateinit var navController: NavController
-    private lateinit var startPickupBtn: AppCompatButton
-    private lateinit var viewLocationBtn: AppCompatButton
-    private lateinit var cancelBtn: AppCompatButton
 
 
     override fun onCreateView(
@@ -38,11 +35,7 @@ class MyPickUpFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-        startPickupBtn = view.findViewById(R.id.btn_start_pickup)
-        viewLocationBtn = view.findViewById(R.id.btn_view_location)
-        cancelBtn = view.findViewById(R.id.btn_cancel)
 
-        markButtonDisable(startPickupBtn)
         initUI()
 
     }
@@ -56,12 +49,9 @@ class MyPickUpFragment : Fragment() {
         mBinding.btnCancel.setOnClickListener {
             showPickUpCancel()
         }
-    }
-
-    fun markButtonDisable(button: Button) {
-        button?.isEnabled = false
-        button?.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
-        button?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.greyish))
+        mBinding.btnViewLocation2.setOnClickListener {
+            navController.navigate(R.id.nav_pickup_friend)
+        }
     }
 
     private fun showPickUpCancel() {

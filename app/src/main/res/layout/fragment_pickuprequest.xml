@@ -237,6 +237,7 @@
                             android:background="@drawable/drawable_scan_again"
                             android:fontFamily="@font/poppins_regular"
                             android:text="Accept"
+                            android:id="@+id/btn_accept2"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_9sdp" />
@@ -332,6 +333,7 @@
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_accept3"
                             android:layout_width="@dimen/_55sdp"
                             android:layout_height="@dimen/_19sdp"
                             android:background="@drawable/drawable_scan_again"
@@ -432,6 +434,7 @@
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_accept4"
                             android:layout_width="@dimen/_55sdp"
                             android:layout_height="@dimen/_19sdp"
                             android:background="@drawable/drawable_scan_again"
@@ -532,6 +535,7 @@
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_accept5"
                             android:layout_width="@dimen/_55sdp"
                             android:layout_height="@dimen/_19sdp"
                             android:background="@drawable/drawable_scan_again"
@@ -632,6 +636,7 @@
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_accept6"
                             android:layout_width="@dimen/_55sdp"
                             android:layout_height="@dimen/_19sdp"
                             android:background="@drawable/drawable_scan_again"
@@ -732,6 +737,7 @@
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_accept7"
                             android:layout_width="@dimen/_55sdp"
                             android:layout_height="@dimen/_19sdp"
                             android:background="@drawable/drawable_scan_again"

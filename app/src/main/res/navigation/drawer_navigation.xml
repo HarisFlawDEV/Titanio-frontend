@@ -379,6 +379,9 @@
         android:label="@string/title_pickup_request"
         tools:layout="@layout/fragment_pickuprequest">
 
+        <action
+            android:id="@+id/action_nav_pickup_requests_to_nav_my_pickups"
+            app:destination="@id/nav_my_pickups" />
     </fragment>
 
     <fragment
@@ -387,6 +390,20 @@
         android:label="@string/title_my_pickup"
         tools:layout="@layout/fragment_my_pickup">
 
+        <action
+            android:id="@+id/action_nav_my_pickups_to_nav_pickup_friend"
+            app:destination="@id/nav_pickup_friend" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pickup_friend"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.PickUpFriendFragment"
+        android:label="@string/title_pickup_friend"
+        tools:layout="@layout/fragment_pickup_friend">
+
+        <action
+            android:id="@+id/action_nav_pickup_friend_to_navigation_chat_user"
+            app:destination="@id/navigation_chat_user" />
     </fragment>
 
 
