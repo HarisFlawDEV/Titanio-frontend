@@ -54,7 +54,14 @@ class MyLuggageFragment : Fragment() {
             navController.navigate(R.id.navigation_claim_warranty_qrcode_scan)
         })
         mBinding.btnAddNewSuitcase.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.nav_add_new_suitcase_luggage)
+            var bundle = Bundle()
+            bundle.putBoolean("is_from_my_luggage", true)
+            navController.navigate(R.id.nav_add_new_suitcase_luggage, bundle)
         })
+
+        mBinding.btnWarrantyLog.setOnClickListener(View.OnClickListener {
+            navController.navigate(R.id.nav_warranty_log)
+        })
+
     }
 }

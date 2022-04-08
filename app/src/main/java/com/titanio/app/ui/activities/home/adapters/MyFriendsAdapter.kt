@@ -24,6 +24,8 @@ class MyFriendsAdapter(
 
     interface MyInterface {
         fun onInviteFriendItemClick(position: Int)
+        fun onMessageItemClick()
+        fun onunfriendItemClick()
     }
 
     fun setClickListener(myInterface: MyInterface) {
@@ -35,10 +37,19 @@ class MyFriendsAdapter(
         var ivFriendImage: ImageView = itemView.findViewById(R.id.ivFriendImage)
         var tvFriendName: TextView = itemView.findViewById(R.id.tvFriendName)
         var ivOptions: ImageView = itemView.findViewById(R.id.ivOptions)
-        var llOptions: BubbleView = itemView.findViewById(R.id.llOptions)
+        var llOptions: LinearLayout = itemView.findViewById(R.id.ll_options_menu)
+        var ll_message: LinearLayout = itemView.findViewById(R.id.ll_message)
+        var ll_unfriend: LinearLayout = itemView.findViewById(R.id.ll_unfriend)
+
         init {
             llOptions.setOnClickListener(View.OnClickListener {
                 myInterface!!.onInviteFriendItemClick(adapterPosition)
+            })
+            ll_message.setOnClickListener(View.OnClickListener {
+                myInterface!!.onMessageItemClick()
+            })
+            ll_unfriend . setOnClickListener (View.OnClickListener {
+                myInterface!!.onunfriendItemClick()
             })
 
 
@@ -68,8 +79,7 @@ class MyFriendsAdapter(
         holder.ivOptions.setOnClickListener(View.OnClickListener {
             if (holder.llOptions.visibility == View.VISIBLE) {
                 holder.llOptions.visibility = View.GONE
-            }
-            else {
+            } else {
                 holder.llOptions.visibility = View.VISIBLE
             }
         })

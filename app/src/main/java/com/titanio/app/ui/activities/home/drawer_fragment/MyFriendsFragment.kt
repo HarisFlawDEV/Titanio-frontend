@@ -1,11 +1,15 @@
 package com.titanio.app.ui.activities.home.drawer_fragment
 
+import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
@@ -13,11 +17,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.titanio.app.R
 import com.titanio.app.databinding.FragmentMyFriendsBinding
 import com.titanio.app.model.MyFriendsModel
+import com.titanio.app.ui.activities.home.DrawerActivity
 import com.titanio.app.ui.activities.home.adapters.FriendRequestsAdapter
 import com.titanio.app.ui.activities.home.adapters.InviteFriendsAdapter
 import com.titanio.app.ui.activities.home.adapters.MyFriendsAdapter
 
-class MyFriendsFragment : Fragment(), MyFriendsAdapter.MyInterface/*, FriendRequestsAdapter.MyInterface*/ {
+class MyFriendsFragment : Fragment(),
+    MyFriendsAdapter.MyInterface {
     var navController: NavController? = null
 
     private lateinit var mBinding: FragmentMyFriendsBinding
@@ -45,6 +51,7 @@ class MyFriendsFragment : Fragment(), MyFriendsAdapter.MyInterface/*, FriendRequ
     }
 
     fun initUI() {
+        (activity as DrawerActivity?)?.hidebottomBar()
 
         myFriendsList = ArrayList()
         prepareDataMyFriends()
@@ -74,8 +81,18 @@ class MyFriendsFragment : Fragment(), MyFriendsAdapter.MyInterface/*, FriendRequ
             mBinding.llTabFriendRequests.visibility = View.GONE
             mBinding.llTabFriends.visibility = View.VISIBLE
 
-            mBinding.tvTabFriends.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
-            mBinding.tvTabFriendRequests.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+            mBinding.tvTabFriends.setTextColor(
+                ContextCompat.getColor(
+                    requireContext(),
+                    R.color.white
+                )
+            )
+            mBinding.tvTabFriendRequests.setTextColor(
+                ContextCompat.getColor(
+                    requireContext(),
+                    R.color.black
+                )
+            )
             mBinding.tvTabFriendRequests.setBackgroundResource(0)
         })
 
@@ -89,14 +106,32 @@ class MyFriendsFragment : Fragment(), MyFriendsAdapter.MyInterface/*, FriendRequ
             mBinding.llTabFriendRequests.visibility = View.VISIBLE
             mBinding.llTabFriends.visibility = View.GONE
 
-            mBinding.tvTabFriendRequests.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
-            mBinding.tvTabFriends.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+            mBinding.tvTabFriendRequests.setTextColor(
+                ContextCompat.getColor(
+                    requireContext(),
+                    R.color.white
+                )
+            )
+            mBinding.tvTabFriends.setTextColor(
+                ContextCompat.getColor(
+                    requireContext(),
+                    R.color.black
+                )
+            )
             mBinding.tvTabFriends.setBackgroundResource(0)
         })
 
 
         mBinding.ivBack.setOnClickListener(View.OnClickListener {
             navController?.navigateUp()
+        })
+
+
+        mBinding.tvInviteFriends.setOnClickListener(View.OnClickListener {
+            navController?.navigate(R.id.nav_invite_friends)
+        })
+        mBinding.btnAddNewFriends.setOnClickListener(View.OnClickListener {
+            navController?.navigate(R.id.navigation_add_more_friends)
         })
     }
 
@@ -150,10 +185,36 @@ class MyFriendsFragment : Fragment(), MyFriendsAdapter.MyInterface/*, FriendRequ
 
     }
 
-//    override fun onDeleteFriendRequestClick(position: Int) {
-//    }
+    override fun onMessageItemClick() {
+        navController?.navigate(R.id.navigation_chat_user)
+    }
 
-//    override fun onConfirmFriendRequestClick(position: Int) {
-//    }
+    override fun onunfriendItemClick() {
+        showUnFreidnAlert()
+    }
+
+    private fun showUnFreidnAlert() {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_unfriend, null)
+        val customDialog = AlertDialog.Builder(requireActivity(), R.style.WrapContentDialog)
+            .setCancelable(false)
+            .setView(dialogView)
+
+            .show()
+        customDialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val btnCancel = dialogView.findViewById<AppCompatButton>(R.id.btn_cancel)
+        val btnConfirm = dialogView.findViewById<AppCompatButton>(R.id.btn_confirm)
+        btnCancel.setOnClickListener {
+            customDialog.dismiss()
+
+
+        }
+        btnConfirm.setOnClickListener {
+            customDialog.dismiss()
+
+
+        }
+    }
+
 
 }

@@ -78,8 +78,16 @@
         <action
             android:id="@+id/action_nav_my_luggage_to_nav_add_new_suitcase_luggage"
             app:destination="@id/nav_add_new_suitcase_luggage" />
+        <action
+            android:id="@+id/action_nav_my_luggage_to_nav_warranty_log"
+            app:destination="@id/nav_warranty_log" />
     </fragment>
 
+    <fragment
+        android:id="@+id/nav_warranty_log"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.WarrantyLogFragment"
+        android:label="@string/title_warranty_log"
+        tools:layout="@layout/frgament_warranty_log"></fragment>
     <fragment
         android:id="@+id/nav_add_new_suitcase_luggage"
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.AddNewSuitCaseFragment"
@@ -89,6 +97,7 @@
         <action
             android:id="@+id/action_nav_add_new_suitcase_luggage_to_nav_add_new_suitcase_detail"
             app:destination="@id/nav_add_new_suitcase_detail" />
+
     </fragment>
 
     <fragment
@@ -102,6 +111,24 @@
             app:destination="@id/nav_notifications" />
         <action
             android:id="@+id/action_nav_add_new_suitcase_detail_to_nav_add_new_suitcase_luggage"
+            app:destination="@id/nav_add_new_suitcase_luggage" />
+        <action
+            android:id="@+id/action_nav_add_new_suitcase_detail_to_navigation_suit_case_confrim_Detail"
+            app:destination="@id/navigation_suit_case_confrim_Detail" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_suit_case_confrim_Detail"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.SuitCaseConfirmDetailFragment"
+        android:label="@string/navigation_suit_case_confirm_detail_added"
+        tools:layout="@layout/fargment_suitcase_confirm_detail_added">
+
+        <action
+            android:id="@+id/action_navigation_suit_case_confrim_Detail_to_nav_my_luggage"
+            app:destination="@id/nav_my_luggage" />
+        <action
+            android:id="@+id/action_navigation_suit_case_confrim_Detail_to_nav_add_new_suitcase_luggage"
             app:destination="@id/nav_add_new_suitcase_luggage" />
     </fragment>
 
@@ -368,5 +395,14 @@
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyFriendsFragment"
         android:label="@string/title_my_friends"
         tools:layout="@layout/fragment_my_friends">
+        <action
+            android:id="@+id/action_nav_my_friends_to_navigation_chat_user"
+            app:destination="@id/navigation_chat_user" />
+        <action
+            android:id="@+id/action_nav_my_friends_to_nav_invite_friends"
+            app:destination="@id/nav_invite_friends" />
+        <action
+            android:id="@+id/action_nav_my_friends_to_navigation_add_more_friends"
+            app:destination="@id/navigation_add_more_friends" />
     </fragment>
 </navigation>

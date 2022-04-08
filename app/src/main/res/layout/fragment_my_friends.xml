@@ -1,226 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <RelativeLayout
+        android:id="@+id/rr_header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="130dp"
+        android:background="@drawable/bg_login">
 
-        <RelativeLayout
-            android:id="@+id/rr_header"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:background="@drawable/bg_login">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:src="@drawable/ic_back" />
 
-            <ImageView
-                android:id="@+id/ivBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_25sdp"
-                android:src="@drawable/ic_back" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="My Friends"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
 
-            <TextView
-                android:id="@+id/tv_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="My Friends"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp" />
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:id="@+id/card_view_detail"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="70dp"
-            android:background="@drawable/drawbale_cardview_corner"
-            android:orientation="vertical">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_45sdp"
-                android:weightSum="2"
-                android:background="@drawable/drawbale_bg_my_friends_tab"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:id="@+id/tvTabFriends"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="Friends"
-                    android:gravity="center"
-                    android:textSize="@dimen/_11sdp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textColor="#fff"
-                    android:layout_weight="1"
-                    android:background="@drawable/drawbale_bg_my_friends_tab_selected"/>
-
-                <TextView
-                    android:id="@+id/tvTabFriendRequests"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="Friend Requests"
-                    android:gravity="center"
-                    android:textSize="@dimen/_11sdp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textColor="#000"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/llTabFriends"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginHorizontal="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
-                    android:elevation="4dp"
-                    app:cardCornerRadius="25dp"
-                    app:cardElevation="4dp">
-
-                    <FrameLayout
-                        android:id="@+id/frame_layout_password"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="45dp"
-                            android:background="@drawable/round_corner_edit_text"
-                            android:hint="Search"
-                            android:inputType="text"
-                            android:maxLength="50"
-                            android:maxLines="1"
-                            android:paddingStart="@dimen/_12sdp"
-                            android:paddingEnd="@dimen/_21sdp"
-                            android:text=""
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textColorHint="@color/black"
-                            android:textSize="@dimen/_11sdp" />
-
-                        <ImageView
-                            android:id="@+id/img_eye"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="end|center_vertical"
-                            android:layout_marginEnd="@dimen/_12sdp"
-                            android:clickable="true"
-                            android:src="@drawable/ic_search_tag" />
-                    </FrameLayout>
-                </androidx.cardview.widget.CardView>
-
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:id="@+id/llFriendsCount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="@dimen/_15sdp"
-                    android:paddingTop="@dimen/_18sdp">
-
-                    <TextView
-                        android:id="@+id/tvFriendsCount"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="200"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12sdp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Friends"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12sdp" />
-                </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/tvInviteFriends"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end|center"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_8sdp"
-                        android:paddingTop="@dimen/_18sdp"
-                        android:paddingHorizontal="@dimen/_15sdp"
-                        android:text="Invite Friends"/>
-
-                </FrameLayout>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvMyFriends"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:layout_weight="1" />
-
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnAddNewFriends"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:layout_marginBottom="@dimen/_65sdp"
-                    android:background="@drawable/drawable_signup_btn"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Add New Friends"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/llTabFriendRequests"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:orientation="vertical">
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvFriendRequests"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:layout_weight="1" />
-
-            </LinearLayout>
-
-        </LinearLayout>
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/card_view_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/drawbale_cardview_corner"
+        android:orientation="vertical">
 
-</ScrollView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/drawbale_bg_my_friends_tab"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <TextView
+                            android:id="@+id/tvTabFriends"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawbale_bg_my_friends_tab_selected"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="Friends"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvTabFriendRequests"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="Friend Requests"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTabFriends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="4dp">
+
+                            <FrameLayout
+                                android:id="@+id/frame_layout_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:background="@drawable/round_corner_edit_text"
+                                    android:hint="Search"
+                                    android:inputType="text"
+                                    android:maxLength="50"
+                                    android:maxLines="1"
+                                    android:paddingStart="@dimen/_14sdp"
+                                    android:paddingEnd="@dimen/_21sdp"
+                                    android:text=""
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <ImageView
+                                    android:id="@+id/img_eye"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:layout_marginEnd="@dimen/_12sdp"
+                                    android:clickable="true"
+                                    android:src="@drawable/ic_search_tag" />
+                            </FrameLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/llFriendsCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_18sdp">
+
+                                <TextView
+                                    android:id="@+id/tvFriendsCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="200"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Friends"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_invite_friends"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center"
+                                android:fontFamily="@font/poppins_medium"
+                                android:paddingHorizontal="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_18sdp"
+                                android:text="Invite Friends"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </FrameLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvMyFriends"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_weight="1" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTabFriendRequests"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvFriendRequests"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_new_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/drawable_signup_btn"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Add New Friends"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -8,22 +8,20 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.titanio.app.R
-import com.titanio.app.databinding.FragmentAddSuitCaseDetailBinding
-import com.titanio.app.ui.activities.home.DrawerActivity
+import com.titanio.app.databinding.FargmentSuitcaseConfirmDetailAddedBinding
 
-class AddSuitcaseDetailsFragment : Fragment() {
+class SuitCaseConfirmDetailFragment : Fragment() {
 
 
-    private lateinit var mBinding: FragmentAddSuitCaseDetailBinding
+    private lateinit var mBinding: FargmentSuitcaseConfirmDetailAddedBinding
     private lateinit var navController: NavController
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = FragmentAddSuitCaseDetailBinding.inflate(inflater, container, false)
+        mBinding = FargmentSuitcaseConfirmDetailAddedBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 
@@ -32,29 +30,20 @@ class AddSuitcaseDetailsFragment : Fragment() {
         navController = Navigation.findNavController(view)
 
         initUI()
-
     }
 
     fun initUI() {
-        (activity as DrawerActivity?)?.hidebottomBar()
 
 
-        mBinding.btnConfirmDetail.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.navigation_suit_case_confrim_Detail)
-        })
-        mBinding.btnScanAgain.setOnClickListener(View.OnClickListener {
+        mBinding.btnAddAnotherLuggage.setOnClickListener(View.OnClickListener {
             var bundle = Bundle()
             bundle.putBoolean("is_from_my_luggage", false)
             navController.navigate(R.id.nav_add_new_suitcase_luggage, bundle)
-        })
-
-        mBinding.imgHamburger.setOnClickListener(View.OnClickListener {
-            (activity as DrawerActivity?)?.openDrawer()
 
         })
-        mBinding.imgNotification.setOnClickListener(View.OnClickListener {
-            navController.navigate(R.id.nav_notifications)
-
+        mBinding.btnProceedToLugage.setOnClickListener(View.OnClickListener {
+            navController.navigate(R.id.nav_my_luggage)
         })
+
     }
 }
