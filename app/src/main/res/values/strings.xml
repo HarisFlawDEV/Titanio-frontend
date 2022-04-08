@@ -89,6 +89,7 @@
     <string name="title_group_detail">Group Detail</string>
     <string name="title_group_edit">Edit Group</string>
     <string name="title_add_more_friends">Add More Friends</string>
+    <string name="title_filter_fragment">Filter</string>
     <string name="title_my_luggage">My Luggage</string>
     <string name="claim_warranty"><u>Claim Warranty</u></string>
     <string name="title_pickup_request">Pick Up Request</string>
@@ -103,5 +104,11 @@
     <string name="title_warranty_log">Warranty Log</string>
     <string name="title_my_friends">My Friends</string>
     <string name="title_add_in_group">Add In Group Fragment</string>
-
+    <string name="title_report_us_fragment">Report Us</string>
+    <string name="text_privacy_policy">Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. concept to the people. In case a person wish to gift 200 free meals to common people, he can pay the cost to the shop keeper. The shop keeper generates 200 free coupons in this app. The lucky one can pick the free gift coupon visible on the mobile app and redeem it from the shop by the shopkeeper. Such shops foreseeing adequate developments in the field of business. This free coupons improves customer and seller engagement.\n\n There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</string>
+    <string name="title_settings_fragment">Settings</string>
+    <string name="title_privacy_policy_fragment">Privacy Policy</string>
+    <string name="title_terms_and_conditions_fragment">Terrms and Condtions</string>
+    <string name="title_share_flights_fragment">Share Flight Fragment</string>
+    <string name="title_my_flights_fragment">My Flights</string>
 </resources>

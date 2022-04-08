@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rr_header"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bg_login">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="My Pickups"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/card_view_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/drawbale_cardview_corner">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:layout_above="@+id/btn_add_flight_details"
+                android:layout_marginBottom="@dimen/_12sdp"
+            android:fillViewport="true">
+
+                    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_picup_corner"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_12sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="FLIGHT JL25"
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_pickup"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/drawable_my_pickup_red_btn"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Pickup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <FrameLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_below="@+id/btn_pickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_start_destination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="America"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_end_destination"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Dubai"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_start_time_one"
+                                android:layout_below="@+id/tv_start_destination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="06:00 AM"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_below="@+id/tv_start_time_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="03-15-22"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_alignParentEnd="true"
+                                android:id="@+id/tv_end_time_one"
+                                android:layout_below="@+id/tv_end_destination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="05:30 PM"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/tv_end_time_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="03-15-22"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                         android:adjustViewBounds="true"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:src="@drawable/ic_plane_with_points"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_picup_corner"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_12sdp">
+
+                    <TextView
+                        android:id="@+id/tv_flight_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="FLIGHT JL25"
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_flight_code"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Status:"
+                            android:textColor="#252525"
+                            android:textSize="@dimen/_8sdp" />
+
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Arrived"
+                            android:textColor="#FF2200"
+                            android:textSize="@dimen/_8sdp" />
+
+
+
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_re_assign_pickup"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/drawable_signup_btn"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Re-Assign Pickup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_send_location"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_below="@+id/btn_re_assign_pickup"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/drawable_scan_again"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Send Location"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_pickup_location"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_below="@+id/btn_send_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_start_destination_flight2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="America"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_end_destination_flight2"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Dubai"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_start_time_one_flight2"
+                                android:layout_below="@+id/tv_start_destination_flight2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="06:00 AM"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_below="@+id/tv_start_time_one_flight2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="03-15-22"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_alignParentEnd="true"
+                                android:id="@+id/tv_end_time_one_flight2"
+                                android:layout_below="@+id/tv_end_destination_flight2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="05:30 PM"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/tv_end_time_one_flight2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="03-15-22"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+                        </RelativeLayout>
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_plane_with_points" />
+
+
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_below="@+id/fl_pickup_location"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_tracker_text"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Dale Houston will pick up you"
+                            android:textColor="#252525"
+                            android:textSize="@dimen/_8sdp" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_tracker"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/drawable_my_pickup_red_btn"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Tracker"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_picup_corner"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_12sdp">
+
+                    <TextView
+                        android:id="@+id/tv_flight_code_flight3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="FLIGHT JL25"
+                        android:textColor="#252525"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_flight_code_flight3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Status:"
+                            android:textColor="#252525"
+                            android:textSize="@dimen/_8sdp" />
+
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Arrived"
+                            android:textColor="#FF2200"
+                            android:textSize="@dimen/_8sdp" />
+
+
+
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_re_assign_pickup_flight3"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/drawable_signup_btn"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Re-Assign Pickup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp" />
+
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_pickup_location_flight3"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_below="@+id/btn_re_assign_pickup_flight3"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_start_destination_flight3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="America"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_end_destination_flight3"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Dubai"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_start_time_one_flight3"
+                                android:layout_below="@+id/tv_start_destination_flight3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="06:00 AM"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_below="@+id/tv_start_time_one_flight3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="03-15-22"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_end_time_one_flight3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_end_destination_flight3"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="05:30 PM"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+
+
+                            <TextView
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/tv_end_time_one_flight3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="03-15-22"
+                                android:textColor="#252525"
+                                android:textSize="@dimen/_7sdp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_plane_with_points" />
+
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_flight_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/drawable_signup_btn"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Add Flight Detail"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

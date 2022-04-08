@@ -102,6 +102,10 @@ class HomeFragment : Fragment(), HomeAdapter.IPostClick {
         mBinding.imgHamburger.setOnClickListener(View.OnClickListener {
             (activity as DrawerActivity?)?.openDrawer()
         })
+
+        mBinding.filter.setOnClickListener(View.OnClickListener {
+            navController.navigate(R.id.navigation_filter)
+        })
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

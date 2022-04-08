@@ -3,78 +3,75 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/btn_invite_black.xml" value="0.1935" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawabe_another_luggage.xml" value="0.1935" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_my_pickup_red_btn.xml" value="0.1935" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_pickfriend_btn.xml" value="0.1775" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_pickupfriend_dots.xml" value="0.1775" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_picup_corner.xml" value="0.1935" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_round_dialog.xml" value="0.1935" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_scan_again.xml" value="0.1935" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_signup_btn.xml" value="0.1775" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawbale_three_dots.xml" value="0.2595" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_drawer.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/dialog_calim_recieved.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/dialog_claim_received.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/dialog_pickup_cancel.xml" value="0.4" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_add_more_friends.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_add_post.xml" value="0.22592592592592592" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_app_setup.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_chat_user.xml" value="0.22592592592592592" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_luggage_found.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_my_luggage.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_my_pickup.xml" value="0.2" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_my_pickups.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_pickup_friend.xml" value="0.264" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_pickuprequest.xml" value="0.4" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_post_detail_pic.xml" value="0.22592592592592592" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_subscription_plan.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Faizan Ahmed/AndroidStudioProjects/titanio_android/app/src/main/res/menu/drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawabe_another_luggage.xml" value="0.1455" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_grey_btn_gradient.xml" value="0.16" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_login_btn.xml" value="0.152" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_my_pickup_red_btn.xml" value="0.203" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_scan_again.xml" value="0.16" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/drawable_signup_btn.xml" value="0.2" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/login_frame_layout_shape.xml" value="0.161" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/round_corner_edit_text.xml" value="0.16" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/drawable/round_corner_grey_edit_text.xml" value="0.16" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_post_detail_video.xml" value="0.2" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/activity_splash.xml" value="0.152" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/app_bar_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/content_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_add_more_friends.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_add_new_group.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_app_introduction.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_app_setup.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_apple_tracking.xml" value="0.388560157790927" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_create_group.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_filter.xml" value="0.264" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_found_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_friends_in_group.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_invite_friends.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_my_flights.xml" value="0.264" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_my_friends.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_my_pickup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_other_user_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_otp_verification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_pickuprequest.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_post_detail_pic.xml" value="0.264" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_privacy_policy.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_profile_completed.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_report_us.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_scan_q_r_code.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_search.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_settings.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_share_flight.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_share_flights.xml" value="0.264" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_signup.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_subscription_plan.xml" value="0.264" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_suit_case_added.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_suit_case_details.xml" value="0.176" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/fragment_thank_you.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/intro_slider_four_save_money.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/intro_slider_suitcasefor_life.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/intro_slider_three_live_tracking.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/intro_slider_two_luggae_recovery.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/nav_header_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/nav_header_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/row_add_more_friends.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/row_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/row_invite_friends.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/layout/test.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Muhammad Haris/AndroidStudioProjects/titanio_android/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawabe_another_luggage.xml" value="0.1335" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawable_brand_corner.xml" value="0.131" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawable_grey_btn_gradient.xml" value="0.1335" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawable_login_btn.xml" value="0.131" />
-        <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawable_round_corner_luggae.xml" value="0.1615" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawbale_cardview_corner.xml" value="0.1335" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawbale_three_dots.xml" value="0.1335" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/drawable/drawble_corner_sheet.xml" value="0.131" />
@@ -101,7 +98,6 @@
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_invite_friends.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_luggage_found.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_my_groups.xml" value="0.17" />
-        <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_my_luggage.xml" value="0.25" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_notification.xml" value="0.15" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_other_user_profile.xml" value="0.14447463768115942" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/fragment_otp_verification.xml" value="0.17083333333333334" />
@@ -123,28 +119,6 @@
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/row_invite_friends.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17083333333333334" />
-        <entry key="app/src/main/res/drawable/btn_grey.xml" value="0.154" />
-        <entry key="app/src/main/res/drawable/btn_invite_black.xml" value="0.172" />
-        <entry key="app/src/main/res/drawable/dialog_round_corner_msg_count.xml" value="0.154" />
-        <entry key="app/src/main/res/drawable/drawbale_bg_my_friends_tab.xml" value="0.154" />
-        <entry key="app/src/main/res/drawable/drawbale_bg_my_friends_tab_selected.xml" value="0.154" />
-        <entry key="app/src/main/res/drawable/drawbale_cardview_corner.xml" value="0.154" />
-        <entry key="app/src/main/res/drawable/drawbale_three_dots.xml" value="0.136" />
-        <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.12552083333333333" />
-        <entry key="app/src/main/res/layout/fragment_add_in_group.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/fragment_add_new_group.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/fragment_add_post.xml" value="0.12552083333333333" />
-        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/fragment_invite_friends.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/fragment_my_friends.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/fragment_my_groups.xml" value="0.103125" />
-        <entry key="app/src/main/res/layout/fragment_post_detail_pic.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/list_item_group.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/row_friend_request.xml" value="0.2359375" />
-        <entry key="app/src/main/res/layout/row_invite_friends.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/row_my_friends.xml" value="0.2359375" />
-        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.12552083333333333" />
       </map>
     </option>
   </component>

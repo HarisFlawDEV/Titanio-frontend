@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_notifications"
             app:destination="@id/nav_notifications" />
+        <action
+            android:id="@+id/action_nav_home_to_navigation_filter"
+            app:destination="@id/navigation_filter" />
 
     </fragment>
 
@@ -192,7 +195,9 @@
         android:id="@+id/navigation_time_line_detail"
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.TimeLineDetailFragment"
         android:label="@string/title_timeline_detail"
-        tools:layout="@layout/fragment_timeline_detail"></fragment>
+        tools:layout="@layout/fragment_timeline_detail">
+
+    </fragment>
 
     <fragment
         android:id="@+id/nav_my_profile"
@@ -435,4 +440,68 @@
         tools:layout="@layout/fragment_add_in_group">
 
     </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_filter"
+        android:name="com.titanio.app.ui.activities.home.fragments.FilterFragment"
+        android:label="@string/title_filter_fragment"
+        tools:layout="@layout/fragment_filter">
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_report_us"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.ReportUsFragment"
+        android:label="@string/title_report_us_fragment"
+        tools:layout="@layout/fragment_report_us">
+
+        <action
+            android:id="@+id/action_nav_report_us_to_navigation_thank_you"
+            app:destination="@id/navigation_thank_you" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.SettingsFragment"
+        android:label="@string/title_settings_fragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_nav_settings_to_nav_privacy_policy"
+            app:destination="@id/nav_privacy_policy" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_terms_and_conditions"
+            app:destination="@id/nav_terms_and_conditions" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_privacy_policy"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.PrivacyPolicyFragment"
+        android:label="@string/title_privacy_policy_fragment"
+        tools:layout="@layout/fragment_privacy_policy">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_terms_and_conditions"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.TermsAndConditionsFragment"
+        android:label="@string/title_terms_and_conditions_fragment"
+        tools:layout="@layout/fragment_terms_and_conditions">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_shared_flights"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.ShareFlightsFragment"
+        android:label="@string/title_share_flights_fragment"
+        tools:layout="@layout/fragment_share_flights">
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_my_flights"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyFlightsFragment"
+        android:label="@string/title_my_flights_fragment"
+        tools:layout="@layout/fragment_my_flights">
+    </fragment>
+
 </navigation>
