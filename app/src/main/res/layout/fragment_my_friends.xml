@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="@dimen/_25sdp"
                 android:src="@drawable/ic_back" />
 
             <TextView
@@ -48,6 +48,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_45sdp"
+                android:weightSum="2"
                 android:background="@drawable/drawbale_bg_my_friends_tab"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -55,10 +56,27 @@
 
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTabFriends"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:text="Friends"
+                    android:gravity="center"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
                     android:background="@drawable/drawbale_bg_my_friends_tab_selected"/>
+
+                <TextView
+                    android:id="@+id/tvTabFriendRequests"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Friend Requests"
+                    android:gravity="center"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="#000"
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
@@ -110,34 +128,55 @@
                     </FrameLayout>
                 </androidx.cardview.widget.CardView>
 
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
                 <LinearLayout
-                    android:id="@+id/llSelectAll"
+                    android:id="@+id/llFriendsCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingHorizontal="@dimen/_15sdp"
                     android:paddingTop="@dimen/_18sdp">
 
-                    <ImageView
-                        android:id="@+id/ivCheckbox"
-                        android:layout_width="@dimen/_18sdp"
-                        android:layout_height="@dimen/_18sdp"
-                        android:src="@drawable/ic_checkbox_unselect" />
-
-
                     <TextView
-                        android:id="@+id/tvSelectAll"
+                        android:id="@+id/tvFriendsCount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="Select All"
+                        android:text="200"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Friends"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_12sdp" />
                 </LinearLayout>
 
+                    <TextView
+                        android:id="@+id/tvInviteFriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_18sdp"
+                        android:paddingHorizontal="@dimen/_15sdp"
+                        android:text="Invite Friends"/>
+
+                </FrameLayout>
+
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvInviteFriends"
+                    android:id="@+id/rvMyFriends"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/_15sdp"
@@ -166,7 +205,19 @@
                 android:id="@+id/llTabFriendRequests"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"></LinearLayout>
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFriendRequests"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
         </LinearLayout>
     </RelativeLayout>

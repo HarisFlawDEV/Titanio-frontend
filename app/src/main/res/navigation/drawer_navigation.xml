@@ -161,7 +161,7 @@
 
     <fragment
         android:id="@+id/nav_luggage_found"
-        android:name="com.titanio.app.ui.activities.home.drawer_fragment.LuggageFounfFragment"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.LuggageFoundFragment"
         android:label="@string/title_luggage_found"
         tools:layout="@layout/fragment_luggage_found">
 
@@ -224,5 +224,13 @@
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.InviteFriendsFragment"
         android:label="@string/title_invite_friends"
         tools:layout="@layout/fragment_invite_friends">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_my_friends"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyFriendsFragment"
+        android:label="@string/title_my_friends"
+        tools:layout="@layout/fragment_my_friends">
     </fragment>
 </navigation>

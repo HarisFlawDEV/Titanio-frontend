@@ -83,5 +83,6 @@
     <string name="title_found_item">Found Item</string>
     <string name="title_my_group">My Group</string>
     <string name="title_invite_friends">Invite Friends</string>
+    <string name="title_my_friends">My Friends</string>
 
 </resources>

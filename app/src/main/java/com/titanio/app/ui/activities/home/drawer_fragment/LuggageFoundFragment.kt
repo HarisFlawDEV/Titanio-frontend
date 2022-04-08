@@ -11,7 +11,7 @@ import com.titanio.app.R
 import com.titanio.app.databinding.FragmentLuggageFoundBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
 
-class LuggageFounfFragment : Fragment() {
+class LuggageFoundFragment : Fragment() {
 
     private lateinit var mBinding: FragmentLuggageFoundBinding
     private lateinit var navController: NavController

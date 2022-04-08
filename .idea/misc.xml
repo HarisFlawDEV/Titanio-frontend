@@ -82,19 +82,24 @@
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/layout/row_home.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/menu/activity_main_drawer.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/Muhammad Sohail/AndroidStudioProjects/Titanio/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17083333333333334" />
+        <entry key="app/src/main/res/drawable/btn_grey.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/btn_invite_black.xml" value="0.172" />
         <entry key="app/src/main/res/drawable/dialog_round_corner_msg_count.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/drawbale_bg_my_friends_tab.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/drawbale_bg_my_friends_tab_selected.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/drawbale_cardview_corner.xml" value="0.154" />
+        <entry key="app/src/main/res/drawable/drawbale_three_dots.xml" value="0.136" />
         <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.2359375" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.12552083333333333" />
         <entry key="app/src/main/res/layout/fragment_add_post.xml" value="0.12552083333333333" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.2359375" />
         <entry key="app/src/main/res/layout/fragment_invite_friends.xml" value="0.2359375" />
         <entry key="app/src/main/res/layout/fragment_my_friends.xml" value="0.2359375" />
+        <entry key="app/src/main/res/layout/fragment_post_detail_pic.xml" value="0.2359375" />
         <entry key="app/src/main/res/layout/list_item_group.xml" value="0.2359375" />
+        <entry key="app/src/main/res/layout/row_friend_request.xml" value="0.2359375" />
         <entry key="app/src/main/res/layout/row_invite_friends.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/row_my_friends.xml" value="0.2359375" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.12552083333333333" />
       </map>
     </option>
