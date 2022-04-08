@@ -97,5 +97,6 @@
     <string name="title_claim_warranty">Claim Warranty</string>
     <string name="title_add_new_suitcaes_luggage">Add New Suitcase Luggage</string>
     <string name="title_nav_add_new_suitcase_detail">Add New Suitcase Detail</string>
+    <string name="title_my_friends">My Friends</string>
 
 </resources>
