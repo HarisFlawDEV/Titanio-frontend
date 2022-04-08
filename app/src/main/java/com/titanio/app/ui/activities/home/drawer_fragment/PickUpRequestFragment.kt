@@ -39,6 +39,24 @@ class PickUpRequestFragment: Fragment() {
         mBinding.btnAccept.setOnClickListener {
             navController.navigate(R.id.nav_my_pickups)
         }
+        mBinding.btnAccept2.setOnClickListener {
+            navController.navigate(R.id.nav_my_pickups)
+        }
+        mBinding.btnAccept3.setOnClickListener {
+            navController.navigate(R.id.nav_my_pickups)
+        }
+        mBinding.btnAccept4.setOnClickListener {
+            navController.navigate(R.id.nav_my_pickups)
+        }
+        mBinding.btnAccept5.setOnClickListener {
+            navController.navigate(R.id.nav_my_pickups)
+        }
+        mBinding.btnAccept6.setOnClickListener {
+            navController.navigate(R.id.nav_my_pickups)
+        }
+        mBinding.btnAccept7.setOnClickListener {
+            navController.navigate(R.id.nav_my_pickups)
+        }
         mBinding.imgBack.setOnClickListener {
             navController.popBackStack()
         }

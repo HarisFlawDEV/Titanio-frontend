@@ -56,6 +56,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Joloc Arc"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:textColor="#252525"
                     android:textSize="@dimen/_8sdp" />
 
@@ -247,6 +248,7 @@
                     android:layout_marginTop="@dimen/_18sdp"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="John Doe"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:textColor="#252525"
                     android:textSize="@dimen/_8sdp" />
 
@@ -402,6 +404,7 @@
                             android:textSize="@dimen/_6sdp" />
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_view_location2"
                             android:layout_width="@dimen/_85sdp"
                             android:layout_height="@dimen/_19sdp"
                             android:layout_marginStart="@dimen/_8sdp"
@@ -434,6 +437,7 @@
                     android:layout_marginTop="@dimen/_18sdp"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Natalie Sophie"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:textColor="#252525"
                     android:textSize="@dimen/_8sdp" />
 

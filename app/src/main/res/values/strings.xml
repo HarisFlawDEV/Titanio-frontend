@@ -97,6 +97,7 @@
     <string name="title_claim_warranty">Claim Warranty</string>
     <string name="title_add_new_suitcaes_luggage">Add New Suitcase Luggage</string>
     <string name="title_nav_add_new_suitcase_detail">Add New Suitcase Detail</string>
+    <string name="title_pickup_friend">Pickup Friend</string>
     <string name="navigation_suit_case_confirm_detail_added">Suit Case Confrim Detail Added</string>
     <string name="resend_otp"><u>Resend OTP</u></string>
     <string name="title_warranty_log">Warranty Log</string>
