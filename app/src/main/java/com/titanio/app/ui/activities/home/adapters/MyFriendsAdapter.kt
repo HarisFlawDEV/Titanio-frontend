@@ -26,6 +26,7 @@ class MyFriendsAdapter(
         fun onInviteFriendItemClick(position: Int)
         fun onMessageItemClick()
         fun onunfriendItemClick()
+        fun onAddInGroupItemClick(position: Int)
     }
 
     fun setClickListener(myInterface: MyInterface) {
@@ -40,6 +41,7 @@ class MyFriendsAdapter(
         var llOptions: LinearLayout = itemView.findViewById(R.id.ll_options_menu)
         var ll_message: LinearLayout = itemView.findViewById(R.id.ll_message)
         var ll_unfriend: LinearLayout = itemView.findViewById(R.id.ll_unfriend)
+        var llAddInGroupMenu: LinearLayout = itemView.findViewById(R.id.llAddInGroupMenu)
 
         init {
             llOptions.setOnClickListener(View.OnClickListener {
@@ -50,6 +52,10 @@ class MyFriendsAdapter(
             })
             ll_unfriend . setOnClickListener (View.OnClickListener {
                 myInterface!!.onunfriendItemClick()
+            })
+
+            llAddInGroupMenu. setOnClickListener (View.OnClickListener {
+                myInterface!!.onAddInGroupItemClick(adapterPosition)
             })
 
 

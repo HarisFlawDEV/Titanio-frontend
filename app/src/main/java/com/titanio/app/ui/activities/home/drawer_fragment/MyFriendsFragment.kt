@@ -193,6 +193,10 @@ class MyFriendsFragment : Fragment(),
         showUnFreidnAlert()
     }
 
+    override fun onAddInGroupItemClick(position: Int) {
+        navController?.navigate(R.id.nav_add_in_group)
+    }
+
     private fun showUnFreidnAlert() {
         val dialogView = layoutInflater.inflate(R.layout.dialog_unfriend, null)
         val customDialog = AlertDialog.Builder(requireActivity(), R.style.WrapContentDialog)

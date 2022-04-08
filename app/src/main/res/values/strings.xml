@@ -101,5 +101,6 @@
     <string name="resend_otp"><u>Resend OTP</u></string>
     <string name="title_warranty_log">Warranty Log</string>
     <string name="title_my_friends">My Friends</string>
+    <string name="title_add_in_group">Add In Group Fragment</string>
 
 </resources>

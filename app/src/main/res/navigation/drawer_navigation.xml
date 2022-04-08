@@ -404,5 +404,18 @@
         <action
             android:id="@+id/action_nav_my_friends_to_navigation_add_more_friends"
             app:destination="@id/navigation_add_more_friends" />
+        <action
+            android:id="@+id/action_nav_my_friends_to_nav_add_in_group"
+            app:destination="@id/nav_add_in_group" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_add_in_group"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.AddInGroupFragment"
+        android:label="@string/title_add_in_group"
+        tools:layout="@layout/fragment_add_in_group">
+
     </fragment>
 </navigation>
