@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.titanio.app.R
 import com.titanio.app.databinding.FragmentMyFlightsBinding
 import com.titanio.app.ui.activities.home.DrawerActivity
 
@@ -37,6 +38,24 @@ class MyFlightsFragment : Fragment() {
 
         mBinding.imgBack.setOnClickListener {
             navController.navigateUp()
+        }
+
+        mBinding.btnPickup.setOnClickListener{
+            navController.navigate(R.id.nav_my_friends_pickup)
+        }
+
+        mBinding.btnReAssignPickup.setOnClickListener{
+            navController.navigate(R.id.nav_my_friends_pickup)
+        }
+
+        mBinding.btnReAssignPickupFlight3.setOnClickListener{
+            navController.navigate(R.id.nav_my_friends_pickup)
+        }
+
+        mBinding.btnTracker.setOnClickListener{
+            val bundle = Bundle()
+            bundle.putBoolean("is_from_flights",true)
+            navController.navigate(R.id.nav_pickup_friend,bundle)
         }
     }
 }

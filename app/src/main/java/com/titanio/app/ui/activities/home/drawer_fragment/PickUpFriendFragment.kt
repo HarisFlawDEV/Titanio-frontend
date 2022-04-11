@@ -40,6 +40,13 @@ class PickUpFriendFragment: Fragment() {
     fun initUI() {
         (activity as DrawerActivity?)?.hidebottomBar()
 
+        if(arguments != null) {
+            var isFromFlights = requireArguments().getBoolean("is_from_flights")
+            if (isFromFlights) {
+               mBinding.imgUser.setImageResource(R.drawable.ic_user_my_flights)
+                mBinding.tvName.text = "Dale Houston"
+            }
+        }
         mBinding.imgBack.setOnClickListener {
             navController.popBackStack()
         }

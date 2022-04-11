@@ -111,4 +111,6 @@
     <string name="title_terms_and_conditions_fragment">Terrms and Condtions</string>
     <string name="title_share_flights_fragment">Share Flight Fragment</string>
     <string name="title_my_flights_fragment">My Flights</string>
+    <string name="title_my_friends_pickup_fragment">My Friends Pickup</string>
+    <string name="title_my_friends_pickup_request_send_fragment">My Friends Pickup Request Send</string>
 </resources>

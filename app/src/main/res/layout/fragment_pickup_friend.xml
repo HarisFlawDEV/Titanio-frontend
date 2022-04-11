@@ -64,6 +64,7 @@
 
 
                         <ImageView
+                            android:id="@+id/img_user"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
@@ -77,6 +78,7 @@
                     </RelativeLayout>
 
                     <TextView
+                        android:id="@+id/tv_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
@@ -90,6 +92,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
                         android:orientation="horizontal">
 
                         <LinearLayout

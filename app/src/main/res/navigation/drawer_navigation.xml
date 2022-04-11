@@ -502,6 +502,30 @@
         android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyFlightsFragment"
         android:label="@string/title_my_flights_fragment"
         tools:layout="@layout/fragment_my_flights">
+        <action
+            android:id="@+id/action_nav_my_flights_to_nav_my_friends_pickup"
+            app:destination="@id/nav_my_friends_pickup" />
+        <action
+            android:id="@+id/action_nav_my_flights_to_nav_pickup_friend"
+            app:destination="@id/nav_pickup_friend" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_my_friends_pickup"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyFriendsPickupFragment"
+        android:label="@string/title_my_friends_pickup_fragment"
+        tools:layout="@layout/fragment_my_friends_pickup_reassign_pickup">
+        <action
+            android:id="@+id/action_nav_my_friends_pickup_to_nav_my_friends_pickup_request_send"
+            app:destination="@id/nav_my_friends_pickup_request_send" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_my_friends_pickup_request_send"
+        android:name="com.titanio.app.ui.activities.home.drawer_fragment.MyFriendsPickupRequestSend"
+        android:label="@string/title_my_friends_pickup_request_send_fragment"
+        tools:layout="@layout/fragment_my_friends_request_send">
+    </fragment>
+
 
 </navigation>

@@ -58,7 +58,7 @@ class PickUpRequestFragment: Fragment() {
             navController.navigate(R.id.nav_my_pickups)
         }
         mBinding.imgBack.setOnClickListener {
-            navController.popBackStack()
+            navController.navigateUp()
         }
 
     }
